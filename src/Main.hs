@@ -1,15 +1,29 @@
+{-# LANGUAGE OverloadedStrings #-}
 module Main where
 
-import TwitSeed
-import Info
-import System.Random
-import System.Random.Mersenne.Pure64
+import Control.Applicative
+import Snap.Core
+import Snap.Util.FileServe
+import Snap.Http.Server
+import RandomHandler (randVal)
+import qualified Data.ByteString.Char8 as B
+import Control.Monad.IO.Class (liftIO)
 
 main :: IO ()
-main = do
-  twint <- twit
-  let mersenne = pureMT $ fromIntegral twint
-      randoCalinteger = fst $ randomInt mersenne
-      randOfTheKing = fst $ randomR (0,1) (mkStdGen randoCalinteger) :: Double
-  -- let twint = 0
-  print randOfTheKing
+main = quickHttpServe site
+
+site :: Snap ()
+site =
+    ifTop (writeBS "hello world") <|>
+    route [ ("foo", writeBS "bar")
+          , ("rand", echoHandler)
+          ] <|>
+    dir "static" (serveDirectory ".")
+
+echoHandler :: Snap ()
+echoHandler = do
+    val <- liftIO $ randVal
+    let rVal = Just (B.pack val)
+    -- param <- getParam "echoparam"
+    maybe (writeBS "failed to generate a random number")
+          writeBS rVal

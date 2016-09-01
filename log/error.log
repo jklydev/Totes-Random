@@ -1,0 +1,5 @@
+[31/Aug/2016:15:28:15 -0400] During processing of request from 127.0.0.1:37932
+request:
+"GET /rand HTTP/1.1\ncache-control: max-age=0\nupgrade-insecure-requests: 1\nconnection: keep-alive\naccept-encoding: gzip, deflate\naccept-language: en-US,en;q=0.5\naccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\nuser-agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:48.0) Gecko/20100101 Firefox/48.0\nhost: localhost:8000\n\nsn=\"localhost:8000\" c=127.0.0.1:37932 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+TlsExceptionHostPort (HandshakeFailed (Error_Packet_unexpected "Alert [(AlertLevel_Fatal,IllegalParameter)]" " expected: change cipher")) "stream.twitter.com" 443
