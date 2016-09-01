@@ -40,7 +40,6 @@
 				$.ajax({
 					url: 'localhost:8000/rand',
 					method: 'GET',
-					data: data,
 					success: (resp) => {
 						console.log('Success: ', resp);
 						$('#number').empty();
