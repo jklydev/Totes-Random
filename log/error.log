@@ -3,3 +3,88 @@ request:
 "GET /rand HTTP/1.1\ncache-control: max-age=0\nupgrade-insecure-requests: 1\nconnection: keep-alive\naccept-encoding: gzip, deflate\naccept-language: en-US,en;q=0.5\naccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\nuser-agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:48.0) Gecko/20100101 Firefox/48.0\nhost: localhost:8000\n\nsn=\"localhost:8000\" c=127.0.0.1:37932 s=127.0.0.1:8000 ctx=/ clen=n/a"
 A web handler threw an exception. Details:
 TlsExceptionHostPort (HandshakeFailed (Error_Packet_unexpected "Alert [(AlertLevel_Fatal,IllegalParameter)]" " expected: change cipher")) "stream.twitter.com" 443
+[01/Sep/2016:17:07:36 -0400] During processing of request from 127.0.0.1:54365
+request:
+"GET /rand HTTP/1.1\naccept-language: en-GB,en;q=0.8,nb;q=0.6\naccept-encoding: gzip, deflate, sdch\ndnt: 1\nuser-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36\norigin: http://evil.com/\naccept: */*\nconnection: keep-alive\nhost: 0.0.0.0:8000\n\nsn=\"0.0.0.0:8000\" c=127.0.0.1:54365 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+TlsExceptionHostPort (HandshakeFailed (Error_Packet_unexpected "Alert [(AlertLevel_Fatal,IllegalParameter)]" " expected: change cipher")) "stream.twitter.com" 443
+[01/Sep/2016:17:07:46 -0400] During processing of request from 127.0.0.1:54365
+request:
+"GET /rand HTTP/1.1\naccept-language: en-GB,en;q=0.8,nb;q=0.6\naccept-encoding: gzip, deflate, sdch\ndnt: 1\nuser-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36\norigin: http://evil.com/\naccept: */*\nconnection: keep-alive\nhost: 0.0.0.0:8000\n\nsn=\"0.0.0.0:8000\" c=127.0.0.1:54365 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+TlsExceptionHostPort (HandshakeFailed (Error_Packet_unexpected "Alert [(AlertLevel_Fatal,IllegalParameter)]" " expected: change cipher")) "stream.twitter.com" 443
+[01/Sep/2016:17:07:48 -0400] During processing of request from 127.0.0.1:54365
+request:
+"GET /rand HTTP/1.1\naccept-language: en-GB,en;q=0.8,nb;q=0.6\naccept-encoding: gzip, deflate, sdch\ndnt: 1\nuser-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36\norigin: http://evil.com/\naccept: */*\nconnection: keep-alive\nhost: 0.0.0.0:8000\n\nsn=\"0.0.0.0:8000\" c=127.0.0.1:54365 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+TlsExceptionHostPort (HandshakeFailed (Error_Packet_unexpected "Alert [(AlertLevel_Fatal,IllegalParameter)]" " expected: change cipher")) "stream.twitter.com" 443
+[01/Sep/2016:17:07:54 -0400] During processing of request from 127.0.0.1:54365
+request:
+"GET /rand HTTP/1.1\naccept-language: en-GB,en;q=0.8,nb;q=0.6\naccept-encoding: gzip, deflate, sdch\ndnt: 1\nuser-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36\norigin: http://evil.com/\naccept: */*\nconnection: keep-alive\nhost: 0.0.0.0:8000\n\nsn=\"0.0.0.0:8000\" c=127.0.0.1:54365 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+ParseError {errorContexts = [], errorMessage = "Failed reading: not a valid json value", errorPosition = 1:1}
+[01/Sep/2016:17:07:55 -0400] During processing of request from 127.0.0.1:54380
+request:
+"GET /rand HTTP/1.1\naccept-language: en-GB,en;q=0.8,nb;q=0.6\naccept-encoding: gzip, deflate, sdch\ndnt: 1\nuser-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36\norigin: http://evil.com/\naccept: */*\nconnection: keep-alive\nhost: 0.0.0.0:8000\n\nsn=\"0.0.0.0:8000\" c=127.0.0.1:54380 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+ParseError {errorContexts = [], errorMessage = "Failed reading: not a valid json value", errorPosition = 1:1}
+[01/Sep/2016:17:07:55 -0400] During processing of request from 127.0.0.1:54382
+request:
+"GET /rand HTTP/1.1\naccept-language: en-GB,en;q=0.8,nb;q=0.6\naccept-encoding: gzip, deflate, sdch\ndnt: 1\nuser-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36\norigin: http://evil.com/\naccept: */*\nconnection: keep-alive\nhost: 0.0.0.0:8000\n\nsn=\"0.0.0.0:8000\" c=127.0.0.1:54382 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+ParseError {errorContexts = [], errorMessage = "Failed reading: not a valid json value", errorPosition = 1:1}
+[01/Sep/2016:17:12:00 -0400] During processing of request from 127.0.0.1:54434
+request:
+"GET /rand HTTP/1.1\naccept-language: en-GB,en;q=0.8,nb;q=0.6\naccept-encoding: gzip, deflate, sdch\ndnt: 1\nuser-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36\norigin: http://evil.com/\naccept: */*\nconnection: keep-alive\nhost: 0.0.0.0:8000\n\nsn=\"0.0.0.0:8000\" c=127.0.0.1:54434 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+ParseError {errorContexts = [], errorMessage = "Failed reading: not a valid json value", errorPosition = 1:1}
+[01/Sep/2016:17:13:35 -0400] During processing of request from 127.0.0.1:54434
+request:
+"GET /rand HTTP/1.1\naccept-language: en-GB,en;q=0.8,nb;q=0.6\naccept-encoding: gzip, deflate, sdch\ndnt: 1\nuser-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36\norigin: http://evil.com/\naccept: */*\nconnection: keep-alive\nhost: 0.0.0.0:8000\n\nsn=\"0.0.0.0:8000\" c=127.0.0.1:54434 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+TlsExceptionHostPort (HandshakeFailed (Error_Packet_unexpected "Alert [(AlertLevel_Fatal,IllegalParameter)]" " expected: change cipher")) "stream.twitter.com" 443
+[01/Sep/2016:17:15:28 -0400] During processing of request from 127.0.0.1:54507
+request:
+"GET /rand HTTP/1.1\naccept-language: en-GB,en;q=0.8,nb;q=0.6\naccept-encoding: gzip, deflate, sdch\ndnt: 1\nuser-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36\norigin: http://evil.com/\naccept: */*\nconnection: keep-alive\nhost: 0.0.0.0:8000\n\nsn=\"0.0.0.0:8000\" c=127.0.0.1:54507 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+TlsExceptionHostPort (HandshakeFailed (Error_Packet_unexpected "Alert [(AlertLevel_Fatal,IllegalParameter)]" " expected: change cipher")) "stream.twitter.com" 443
+[01/Sep/2016:17:17:51 -0400] During processing of request from 127.0.0.1:54539
+request:
+"GET /rand HTTP/1.1\naccept-language: en-GB,en;q=0.8,nb;q=0.6\naccept-encoding: gzip, deflate, sdch\ndnt: 1\nuser-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36\norigin: http://evil.com/\naccept: */*\nconnection: keep-alive\nhost: 0.0.0.0:8000\n\nsn=\"0.0.0.0:8000\" c=127.0.0.1:54539 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+TlsExceptionHostPort (HandshakeFailed (Error_Packet_unexpected "Alert [(AlertLevel_Fatal,IllegalParameter)]" " expected: change cipher")) "stream.twitter.com" 443
+[01/Sep/2016:17:18:39 -0400] During processing of request from 127.0.0.1:54539
+request:
+"GET /rand HTTP/1.1\naccept-language: en-GB,en;q=0.8,nb;q=0.6\naccept-encoding: gzip, deflate, sdch\ndnt: 1\nuser-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36\norigin: http://evil.com/\naccept: */*\nconnection: keep-alive\nhost: 0.0.0.0:8000\n\nsn=\"0.0.0.0:8000\" c=127.0.0.1:54539 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+TlsExceptionHostPort (HandshakeFailed (Error_Packet_unexpected "Alert [(AlertLevel_Fatal,IllegalParameter)]" " expected: change cipher")) "stream.twitter.com" 443
+[01/Sep/2016:17:19:53 -0400] During processing of request from 127.0.0.1:54539
+request:
+"GET /rand HTTP/1.1\naccept-language: en-GB,en;q=0.8,nb;q=0.6\naccept-encoding: gzip, deflate, sdch\ndnt: 1\nuser-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36\norigin: http://evil.com/\naccept: */*\nconnection: keep-alive\nhost: 0.0.0.0:8000\n\nsn=\"0.0.0.0:8000\" c=127.0.0.1:54539 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+TlsExceptionHostPort (HandshakeFailed (Error_Packet_unexpected "Alert [(AlertLevel_Fatal,IllegalParameter)]" " expected: change cipher")) "stream.twitter.com" 443
+[01/Sep/2016:17:20:56 -0400] During processing of request from 127.0.0.1:54539
+request:
+"GET /rand HTTP/1.1\naccept-language: en-GB,en;q=0.8,nb;q=0.6\naccept-encoding: gzip, deflate, sdch\ndnt: 1\nuser-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36\norigin: http://evil.com/\naccept: */*\nconnection: keep-alive\nhost: 0.0.0.0:8000\n\nsn=\"0.0.0.0:8000\" c=127.0.0.1:54539 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+TlsExceptionHostPort (HandshakeFailed (Error_Packet_unexpected "Alert [(AlertLevel_Fatal,IllegalParameter)]" " expected: change cipher")) "stream.twitter.com" 443
+[01/Sep/2016:17:22:04 -0400] During processing of request from 127.0.0.1:54601
+request:
+"GET /rand HTTP/1.1\naccept-language: en-GB,en;q=0.8,nb;q=0.6\naccept-encoding: gzip, deflate, sdch\ndnt: 1\nuser-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36\norigin: http://evil.com/\naccept: */*\nconnection: keep-alive\nhost: 0.0.0.0:8000\n\nsn=\"0.0.0.0:8000\" c=127.0.0.1:54601 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+TlsExceptionHostPort (HandshakeFailed (Error_Packet_unexpected "Alert [(AlertLevel_Fatal,IllegalParameter)]" " expected: change cipher")) "stream.twitter.com" 443
+[01/Sep/2016:17:23:58 -0400] During processing of request from 127.0.0.1:54638
+request:
+"GET /rand HTTP/1.1\naccept-language: en-GB,en;q=0.8,nb;q=0.6\naccept-encoding: gzip, deflate, sdch\ndnt: 1\nuser-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36\norigin: http://evil.com/\naccept: */*\nconnection: keep-alive\nhost: 0.0.0.0:8000\n\nsn=\"0.0.0.0:8000\" c=127.0.0.1:54638 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+TlsExceptionHostPort (HandshakeFailed (Error_Packet_unexpected "Alert [(AlertLevel_Fatal,IllegalParameter)]" " expected: change cipher")) "stream.twitter.com" 443
+[01/Sep/2016:17:26:00 -0400] During processing of request from 127.0.0.1:54671
+request:
+"GET /rand HTTP/1.1\naccept-language: en-GB,en;q=0.8,nb;q=0.6\naccept-encoding: gzip, deflate, sdch\ndnt: 1\nuser-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36\norigin: http://evil.com/\naccept: */*\nconnection: keep-alive\nhost: 0.0.0.0:8000\n\nsn=\"0.0.0.0:8000\" c=127.0.0.1:54671 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+TlsExceptionHostPort (HandshakeFailed (Error_Packet_unexpected "Alert [(AlertLevel_Fatal,IllegalParameter)]" " expected: change cipher")) "stream.twitter.com" 443
+[01/Sep/2016:17:33:42 -0400] During processing of request from 127.0.0.1:54808
+request:
+"GET /rand HTTP/1.1\naccept-language: en-GB,en;q=0.8,nb;q=0.6\naccept-encoding: gzip, deflate, sdch\ndnt: 1\nuser-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36\norigin: http://evil.com/\naccept: */*\nconnection: keep-alive\nhost: 0.0.0.0:8000\n\nsn=\"0.0.0.0:8000\" c=127.0.0.1:54808 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+TlsExceptionHostPort (HandshakeFailed (Error_Packet_unexpected "Alert [(AlertLevel_Fatal,IllegalParameter)]" " expected: change cipher")) "stream.twitter.com" 443

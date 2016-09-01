@@ -13,9 +13,10 @@
 
 			function getTweetHTML(tweets) {
 				$("#number").append("<h4>here's the tweets it came from.</h4>");
+				$('#tweets').empty();
 				tweets.forEach(function(tweet) {
 					const data = {
-						url: tweet,
+						url: "https://" + tweet,
 					};
 
 					$.ajax({
@@ -24,10 +25,7 @@
 						data: data,
 						success: (resp) => {
 							console.log('Success: ', resp.html)
-							$('#tweets').empty();
-							for (let i = 0; i < 10; i++) {
-								$('#tweets').append(resp.html);
-							}
+							$('#tweets').append(resp.html);
 						},
 						error: (obj, textStatus, errorThrown) => {
 							console.log(textStatus, errorThrown);
@@ -38,13 +36,17 @@
 
 			function getNumberAndTweets() {
 				$.ajax({
-					url: 'localhost:8000/rand',
+					url: 'http://0.0.0.0:8000/rand',
 					method: 'GET',
 					success: (resp) => {
 						console.log('Success: ', resp);
 						$('#number').empty();
-						$("#number").append("<h4>here's a random number. it's from twitter.<h4><h5>(1000% cryptographically valid.)</h5><h2>"/*json number -- need to be a single int/float*/"</h2>");
-						getTweetHTML(/*json tweets -- needs to be a list*/);
+						const responseJSON = JSON.parse(resp);
+						const obj = JSON.parse(responseJSON);
+						console.log(obj);
+						console.log(typeof obj);
+						$("#number").append("<h4>here's a random number. it's from twitter.<h4><h5>(1000% cryptographically valid.)</h5><h2>" + obj.value + "</h2>");
+						getTweetHTML(obj["tweet ids"]);
 					},
 					error: (obj, textStatus, errorThrown) => {
 						console.log(textStatus, errorThrown);
