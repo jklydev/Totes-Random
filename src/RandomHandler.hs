@@ -17,4 +17,4 @@ randVal = do
   let mersenne = pureMT $ fromIntegral twint
       randoCalinteger = fst $ randomInt mersenne
       randOfTheKing = fst $ randomR (0,1) (mkStdGen randoCalinteger) :: Double
-  (return . show) $ encode (TwitterSeed randoCalinteger tweets)
+  (return . show) $ encode (TwitterSeed randOfTheKing tweets)
