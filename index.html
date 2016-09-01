@@ -43,8 +43,8 @@
 					success: (resp) => {
 						console.log('Success: ', resp);
 						$('#number').empty();
-						$("#number").append("<h4>here's a random number. it's from twitter.<h4><h5>(1000% cryptographically valid.)</h5><h2>"resp.number"</h2>");
-						getTweetHTML(tweets);
+						$("#number").append("<h4>here's a random number. it's from twitter.<h4><h5>(1000% cryptographically valid.)</h5><h2>"/*json number -- need to be a single int/float*/"</h2>");
+						getTweetHTML(/*json tweets -- needs to be a list*/);
 					},
 					error: (obj, textStatus, errorThrown) => {
 						console.log(textStatus, errorThrown);
