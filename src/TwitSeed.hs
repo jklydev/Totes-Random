@@ -46,14 +46,17 @@ testProc = do
                     -- (liftIO . return) ()
                     testProc
 
-twitInt :: TwitterSeed Int -> Maybe (String,String) -> TwitterSeed Int
-twitInt (TwitterSeed acc ids) (Just (tweet,tweetId)) = TwitterSeed (acc + (hashWithSalt l tweet)) (tweetId:ids)
+makeURL :: (String, String) -> String
+makeURL (userID,tweetId) = "twitter.com/" ++ userID ++ "/status/" ++ tweetId
+
+twitInt :: TwitterSeed Int -> Maybe (String,(String,String)) -> TwitterSeed Int
+twitInt (TwitterSeed acc ids) (Just (tweet,tweetId)) = TwitterSeed (acc + (hashWithSalt l tweet)) ((makeURL tweetId):ids)
   where l = length tweet
 twitInt acc Nothing = acc
 
 
-pipeline :: Maybe StreamingAPI -> Maybe (String,String)
+pipeline :: Maybe StreamingAPI -> Maybe (String,(String,String))
 pipeline (Just (SStatus status)) = Just $ (tweet, tweetId)
   where tweet = T.unpack $ status ^. statusText
-        tweetId = show $ status ^. statusId
+        tweetId = (T.unpack (status ^. user . userScreenName), show $ status ^. statusId)
 pipeline _ = Nothing
