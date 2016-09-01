@@ -23,7 +23,7 @@ site =
 echoHandler :: Snap ()
 echoHandler = do
     val <- liftIO $ randVal
-    let rVal = Just (B.pack $ "Your random number is: " ++ val)
+    let rVal = Just (B.pack val)
     -- param <- getParam "echoparam"
     maybe (writeBS "failed to generate a random number")
           writeBS rVal

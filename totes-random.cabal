@@ -28,6 +28,7 @@ library
                      , hashable
                      , random
                      , mersenne-random-pure64
+                     , aeson
   default-language:    Haskell2010
 
 executable totes-random
@@ -36,6 +37,7 @@ executable totes-random
   default-language:    Haskell2010
   build-depends:       base >= 4.7 && < 5
                      , totes-random
+                     , aeson
                      , random
                      , mersenne-random-pure64
                      , conduit
