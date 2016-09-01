@@ -1,4 +1,4 @@
-{-# LANGUAGE OverloadedStrings #-}
+{-# LANGUAGE OverloadedStrings, GADTs #-}
 
 module TwitSeed
       (twit
@@ -24,12 +24,12 @@ query :: APIRequest StatusesFilter StreamingAPI
 query = statusesFilter [Track ["random", "stochastic","probability","randos","entropy","totes random","serendipity","coincidence","surprise","bayes","baes","laplace","unlikely","million to one","lottery","las vegas","monte carlo","monty python","MCMC","astrology"]]
 -- query = statusesFilter [Track ["stochastic","probability","entropy","bayes","laplace","MCMC","variational","inference","p-value"]]
 
-data TwitterSeed = TwitterSeed {val::Int , tweets::[String]}
+data TwitterSeed a = TwitterSeed {val::a , tweets::[String]}
 
-instance ToJSON TwitterSeed where
+instance (ToJSON a) => ToJSON (TwitterSeed a) where
   toJSON (TwitterSeed v t) = object ["value" .= v, "tweet ids" .= t]
 
-twit :: IO TwitterSeed
+twit :: IO (TwitterSeed Int)
 twit = do
   mgr <- newManager tlsManagerSettings
   runResourceT $ do
@@ -46,7 +46,7 @@ testProc = do
                     -- (liftIO . return) ()
                     testProc
 
-twitInt :: TwitterSeed -> Maybe (String,String) -> TwitterSeed
+twitInt :: TwitterSeed Int -> Maybe (String,String) -> TwitterSeed Int
 twitInt (TwitterSeed acc ids) (Just (tweet,tweetId)) = TwitterSeed (acc + (hashWithSalt l tweet)) (tweetId:ids)
   where l = length tweet
 twitInt acc Nothing = acc
