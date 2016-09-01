@@ -11,24 +11,41 @@
 	<body>
 		<script type='text/javascript'>
 
-			function getTweets() {
+			function getTweetHTML(tweets) {
+				$("#number").append("<h4>here's the tweets it came from.</h4>");
+				tweets.forEach(function(tweet) {
+					const data = {
+						url: tweet,
+					};
 
-				const data = {
-					url: "https://twitter.com/Interior/status/507185938620219395",
-				};
+					$.ajax({
+						url: 'https://publish.twitter.com/oembed',
+						method: 'GET',
+						data: data,
+						success: (resp) => {
+							console.log('Success: ', resp.html)
+							$('#tweets').empty();
+							for (let i = 0; i < 10; i++) {
+								$('#tweets').append(resp.html);
+							}
+						},
+						error: (obj, textStatus, errorThrown) => {
+							console.log(textStatus, errorThrown);
+						}
+					});
+				});
+			}
 
+			function getNumberAndTweets() {
 				$.ajax({
-					url: 'https://publish.twitter.com/oembed',
+					url: 'localhost:8000/rand',
 					method: 'GET',
 					data: data,
 					success: (resp) => {
-						console.log('Success: ', resp.html)
-						$('#tweets').empty();
-						for (let i = 0; i < 10; i++) {
-							$('#tweets').append(resp.html);
-						}
+						console.log('Success: ', resp);
 						$('#number').empty();
-						$("#number").append("<h4>here's a random number from these tweets<h4><h5>(100% cryptographically valid)</h5><h2>1234567890</h2>");
+						$("#number").append("<h4>here's a random number. it's from twitter.<h4><h5>(1000% cryptographically valid.)</h5><h2>"resp.number"</h2>");
+						getTweetHTML(tweets);
 					},
 					error: (obj, textStatus, errorThrown) => {
 						console.log(textStatus, errorThrown);
@@ -37,12 +54,13 @@
 			}
 
 			function generate() {
-				getTweets();
+				getNumberAndTweets();
 			};
 
 		</script>
 
 		<h1>totes random.</h1>
+		<br>
 		<button type="button" class="btn btn-primary" onclick="generate()"><h5>do probability</h5></button>
 		<hr>
 		<div id='number'>
