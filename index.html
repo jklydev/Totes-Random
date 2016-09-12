@@ -11,27 +11,36 @@
 	<body>
 		<script type='text/javascript'>
 
+			function addTweet(data) {
+				$('#tweets').append(data.html);
+			}
+
 			function getTweetHTML(tweets) {
 				$("#number").append("<h4>here's the tweets it came from.</h4>");
 				$('#tweets').empty();
-				tweets.forEach(function(tweet) {
-					const data = {
-						url: "https://" + tweet,
-						hide_media: 'true'
-					};
 
-					$.ajax({
-						url: 'https://publish.twitter.com/oembed',
-						method: 'GET',
-						data: data,
-						success: (resp) => {
-							console.log('Success: ', resp.html)
-							$('#tweets').append(resp.html);
-						},
-						error: (obj, textStatus, errorThrown) => {
-							console.log(textStatus, errorThrown);
-						}
-					});
+				tweets.forEach(function(tweet) {
+					$('#tweets').append("<script id='get_tweet' src='https://publish.twitter.com/oembed?'" + "url=https://" + tweet + "?" + "hide_media=true?callback=addTweet'>\</script>");
+					eval($('#get_tweet').text());
+					$('#get_tweet').remove();
+
+					// const data = {
+					// 	url: "https://" + tweet,
+					// 	hide_media: 'true'
+					// };
+
+					// $.ajax({
+					// 	url: 'https://publish.twitter.com/oembed',
+					// 	method: 'GET',
+					// 	data: data,
+					// 	success: (resp) => {
+					// 		console.log('Success: ', resp.html)
+					// 		$('#tweets').append(resp.html);
+					// 	},
+					// 	error: (obj, textStatus, errorThrown) => {
+					// 		console.log(textStatus, errorThrown);
+					// 	}
+					// });
 				});
 			}
 
