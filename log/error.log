@@ -88,3 +88,118 @@ request:
 "GET /rand HTTP/1.1\naccept-language: en-GB,en;q=0.8,nb;q=0.6\naccept-encoding: gzip, deflate, sdch\ndnt: 1\nuser-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36\norigin: http://evil.com/\naccept: */*\nconnection: keep-alive\nhost: 0.0.0.0:8000\n\nsn=\"0.0.0.0:8000\" c=127.0.0.1:54808 s=127.0.0.1:8000 ctx=/ clen=n/a"
 A web handler threw an exception. Details:
 TlsExceptionHostPort (HandshakeFailed (Error_Packet_unexpected "Alert [(AlertLevel_Fatal,IllegalParameter)]" " expected: change cipher")) "stream.twitter.com" 443
+[12/Sep/2016:14:29:00 -0400] During processing of request from 127.0.0.1:50027
+request:
+"GET /rand HTTP/1.1\naccept-language: en-GB,en;q=0.8,nb;q=0.6\naccept-encoding: gzip, deflate, sdch\nreferer: http://localhost:8000/\ndnt: 1\nuser-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.101 Safari/537.36\norigin: http://localhost:8000\naccept: */*\nconnection: keep-alive\nhost: 0.0.0.0:8000\n\nsn=\"0.0.0.0:8000\" c=127.0.0.1:50027 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+TlsExceptionHostPort (HandshakeFailed (Error_Packet_unexpected "Alert [(AlertLevel_Fatal,IllegalParameter)]" " expected: change cipher")) "stream.twitter.com" 443
+[12/Sep/2016:14:29:04 -0400] During processing of request from 127.0.0.1:50027
+request:
+"GET /rand HTTP/1.1\naccept-language: en-GB,en;q=0.8,nb;q=0.6\naccept-encoding: gzip, deflate, sdch\nreferer: http://localhost:8000/\ndnt: 1\nuser-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.101 Safari/537.36\norigin: http://localhost:8000\naccept: */*\nconnection: keep-alive\nhost: 0.0.0.0:8000\n\nsn=\"0.0.0.0:8000\" c=127.0.0.1:50027 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+TlsExceptionHostPort (HandshakeFailed (Error_Packet_unexpected "Alert [(AlertLevel_Fatal,IllegalParameter)]" " expected: change cipher")) "stream.twitter.com" 443
+[12/Sep/2016:14:29:07 -0400] During processing of request from 127.0.0.1:50062
+request:
+"GET /rand HTTP/1.1\naccept-language: en-GB,en;q=0.8,nb;q=0.6\naccept-encoding: gzip, deflate, sdch\nreferer: http://localhost:8000/\ndnt: 1\nuser-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.101 Safari/537.36\norigin: http://localhost:8000\naccept: */*\nconnection: keep-alive\nhost: 0.0.0.0:8000\n\nsn=\"0.0.0.0:8000\" c=127.0.0.1:50062 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+ParseError {errorContexts = [], errorMessage = "Failed reading: not a valid json value", errorPosition = 1:1}
+[12/Sep/2016:14:29:10 -0400] During processing of request from 127.0.0.1:50027
+request:
+"GET /rand HTTP/1.1\naccept-language: en-GB,en;q=0.8,nb;q=0.6\naccept-encoding: gzip, deflate, sdch\nreferer: http://localhost:8000/\ndnt: 1\nuser-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.101 Safari/537.36\norigin: http://localhost:8000\naccept: */*\nconnection: keep-alive\nhost: 0.0.0.0:8000\n\nsn=\"0.0.0.0:8000\" c=127.0.0.1:50027 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+TlsExceptionHostPort (Terminated True "received fatal error: BadRecordMac" (Error_Protocol ("remote side fatal error",True,BadRecordMac))) "stream.twitter.com" 443
+[12/Sep/2016:14:29:12 -0400] During processing of request from 127.0.0.1:50062
+request:
+"GET /rand HTTP/1.1\naccept-language: en-GB,en;q=0.8,nb;q=0.6\naccept-encoding: gzip, deflate, sdch\nreferer: http://localhost:8000/\ndnt: 1\nuser-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.101 Safari/537.36\norigin: http://localhost:8000\naccept: */*\nconnection: keep-alive\nhost: 0.0.0.0:8000\n\nsn=\"0.0.0.0:8000\" c=127.0.0.1:50062 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+ParseError {errorContexts = [], errorMessage = "Failed reading: not a valid json value", errorPosition = 1:1}
+[12/Sep/2016:14:29:12 -0400] During processing of request from 127.0.0.1:50068
+request:
+"GET /rand HTTP/1.1\naccept-language: en-GB,en;q=0.8,nb;q=0.6\naccept-encoding: gzip, deflate, sdch\nreferer: http://localhost:8000/\ndnt: 1\nuser-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.101 Safari/537.36\norigin: http://localhost:8000\naccept: */*\nconnection: keep-alive\nhost: 0.0.0.0:8000\n\nsn=\"0.0.0.0:8000\" c=127.0.0.1:50068 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+ParseError {errorContexts = [], errorMessage = "Failed reading: not a valid json value", errorPosition = 1:1}
+[12/Sep/2016:14:29:12 -0400] During processing of request from 127.0.0.1:50066
+request:
+"GET /rand HTTP/1.1\naccept-language: en-GB,en;q=0.8,nb;q=0.6\naccept-encoding: gzip, deflate, sdch\nreferer: http://localhost:8000/\ndnt: 1\nuser-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.101 Safari/537.36\norigin: http://localhost:8000\naccept: */*\nconnection: keep-alive\nhost: 0.0.0.0:8000\n\nsn=\"0.0.0.0:8000\" c=127.0.0.1:50066 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+ParseError {errorContexts = [], errorMessage = "Failed reading: not a valid json value", errorPosition = 1:1}
+[12/Sep/2016:14:29:12 -0400] During processing of request from 127.0.0.1:50064
+request:
+"GET /rand HTTP/1.1\naccept-language: en-GB,en;q=0.8,nb;q=0.6\naccept-encoding: gzip, deflate, sdch\nreferer: http://localhost:8000/\ndnt: 1\nuser-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.101 Safari/537.36\norigin: http://localhost:8000\naccept: */*\nconnection: keep-alive\nhost: 0.0.0.0:8000\n\nsn=\"0.0.0.0:8000\" c=127.0.0.1:50064 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+ParseError {errorContexts = [], errorMessage = "Failed reading: not a valid json value", errorPosition = 1:1}
+[12/Sep/2016:14:29:13 -0400] During processing of request from 127.0.0.1:50066
+request:
+"GET /rand HTTP/1.1\naccept-language: en-GB,en;q=0.8,nb;q=0.6\naccept-encoding: gzip, deflate, sdch\nreferer: http://localhost:8000/\ndnt: 1\nuser-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.101 Safari/537.36\norigin: http://localhost:8000\naccept: */*\nconnection: keep-alive\nhost: 0.0.0.0:8000\n\nsn=\"0.0.0.0:8000\" c=127.0.0.1:50066 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+TlsExceptionHostPort (Terminated True "received fatal error: BadRecordMac" (Error_Protocol ("remote side fatal error",True,BadRecordMac))) "stream.twitter.com" 443
+[12/Sep/2016:14:29:13 -0400] During processing of request from 127.0.0.1:50068
+request:
+"GET /rand HTTP/1.1\naccept-language: en-GB,en;q=0.8,nb;q=0.6\naccept-encoding: gzip, deflate, sdch\nreferer: http://localhost:8000/\ndnt: 1\nuser-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.101 Safari/537.36\norigin: http://localhost:8000\naccept: */*\nconnection: keep-alive\nhost: 0.0.0.0:8000\n\nsn=\"0.0.0.0:8000\" c=127.0.0.1:50068 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+TlsExceptionHostPort (Terminated True "received fatal error: BadRecordMac" (Error_Protocol ("remote side fatal error",True,BadRecordMac))) "stream.twitter.com" 443
+[12/Sep/2016:14:29:13 -0400] During processing of request from 127.0.0.1:50062
+request:
+"GET /rand HTTP/1.1\naccept-language: en-GB,en;q=0.8,nb;q=0.6\naccept-encoding: gzip, deflate, sdch\nreferer: http://localhost:8000/\ndnt: 1\nuser-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.101 Safari/537.36\norigin: http://localhost:8000\naccept: */*\nconnection: keep-alive\nhost: 0.0.0.0:8000\n\nsn=\"0.0.0.0:8000\" c=127.0.0.1:50062 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+TlsExceptionHostPort (Terminated True "received fatal error: BadRecordMac" (Error_Protocol ("remote side fatal error",True,BadRecordMac))) "stream.twitter.com" 443
+[12/Sep/2016:14:29:15 -0400] During processing of request from 127.0.0.1:50027
+request:
+"GET /rand HTTP/1.1\naccept-language: en-GB,en;q=0.8,nb;q=0.6\naccept-encoding: gzip, deflate, sdch\nreferer: http://localhost:8000/\ndnt: 1\nuser-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.101 Safari/537.36\norigin: http://localhost:8000\naccept: */*\nconnection: keep-alive\nhost: 0.0.0.0:8000\n\nsn=\"0.0.0.0:8000\" c=127.0.0.1:50027 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+ParseError {errorContexts = [], errorMessage = "Failed reading: not a valid json value", errorPosition = 1:1}
+[12/Sep/2016:14:29:16 -0400] During processing of request from 127.0.0.1:50059
+request:
+"GET /rand HTTP/1.1\naccept-language: en-GB,en;q=0.8,nb;q=0.6\naccept-encoding: gzip, deflate, sdch\nreferer: http://localhost:8000/\ndnt: 1\nuser-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.101 Safari/537.36\norigin: http://localhost:8000\naccept: */*\nconnection: keep-alive\nhost: 0.0.0.0:8000\n\nsn=\"0.0.0.0:8000\" c=127.0.0.1:50059 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+ParseError {errorContexts = [], errorMessage = "Failed reading: not a valid json value", errorPosition = 1:1}
+[12/Sep/2016:14:29:19 -0400] During processing of request from 127.0.0.1:50064
+request:
+"GET /rand HTTP/1.1\naccept-language: en-GB,en;q=0.8,nb;q=0.6\naccept-encoding: gzip, deflate, sdch\nreferer: http://localhost:8000/\ndnt: 1\nuser-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.101 Safari/537.36\norigin: http://localhost:8000\naccept: */*\nconnection: keep-alive\nhost: 0.0.0.0:8000\n\nsn=\"0.0.0.0:8000\" c=127.0.0.1:50064 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+ParseError {errorContexts = [], errorMessage = "Failed reading: not a valid json value", errorPosition = 1:1}
+[12/Sep/2016:14:29:19 -0400] During processing of request from 127.0.0.1:50068
+request:
+"GET /rand HTTP/1.1\naccept-language: en-GB,en;q=0.8,nb;q=0.6\naccept-encoding: gzip, deflate, sdch\nreferer: http://localhost:8000/\ndnt: 1\nuser-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.101 Safari/537.36\norigin: http://localhost:8000\naccept: */*\nconnection: keep-alive\nhost: 0.0.0.0:8000\n\nsn=\"0.0.0.0:8000\" c=127.0.0.1:50068 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+ParseError {errorContexts = [], errorMessage = "Failed reading: not a valid json value", errorPosition = 1:1}
+[12/Sep/2016:14:29:19 -0400] During processing of request from 127.0.0.1:50062
+request:
+"GET /rand HTTP/1.1\naccept-language: en-GB,en;q=0.8,nb;q=0.6\naccept-encoding: gzip, deflate, sdch\nreferer: http://localhost:8000/\ndnt: 1\nuser-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.101 Safari/537.36\norigin: http://localhost:8000\naccept: */*\nconnection: keep-alive\nhost: 0.0.0.0:8000\n\nsn=\"0.0.0.0:8000\" c=127.0.0.1:50062 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+ParseError {errorContexts = [], errorMessage = "Failed reading: not a valid json value", errorPosition = 1:1}
+[12/Sep/2016:14:29:19 -0400] During processing of request from 127.0.0.1:50066
+request:
+"GET /rand HTTP/1.1\naccept-language: en-GB,en;q=0.8,nb;q=0.6\naccept-encoding: gzip, deflate, sdch\nreferer: http://localhost:8000/\ndnt: 1\nuser-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.101 Safari/537.36\norigin: http://localhost:8000\naccept: */*\nconnection: keep-alive\nhost: 0.0.0.0:8000\n\nsn=\"0.0.0.0:8000\" c=127.0.0.1:50066 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+ParseError {errorContexts = [], errorMessage = "Failed reading: not a valid json value", errorPosition = 1:1}
+[12/Sep/2016:14:47:52 -0400] During processing of request from 127.0.0.1:50461
+request:
+"GET /rand HTTP/1.1\naccept-language: en-GB,en;q=0.8,nb;q=0.6\naccept-encoding: gzip, deflate, sdch\nreferer: http://localhost:8000/\ndnt: 1\nuser-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.101 Safari/537.36\norigin: http://evil.com/\naccept: */*\nconnection: keep-alive\nhost: 0.0.0.0:8000\n\nsn=\"0.0.0.0:8000\" c=127.0.0.1:50461 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+TlsExceptionHostPort (HandshakeFailed (Error_Packet_unexpected "Alert [(AlertLevel_Fatal,IllegalParameter)]" " expected: change cipher")) "stream.twitter.com" 443
+[12/Sep/2016:14:51:24 -0400] During processing of request from 127.0.0.1:50538
+request:
+"GET /rand HTTP/1.1\naccept-language: en-GB,en;q=0.8,nb;q=0.6\naccept-encoding: gzip, deflate, sdch\nreferer: http://localhost:8000/\ndnt: 1\nuser-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.101 Safari/537.36\norigin: http://localhost:8000\naccept: */*\nconnection: keep-alive\nhost: 0.0.0.0:8000\n\nsn=\"0.0.0.0:8000\" c=127.0.0.1:50538 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+TlsExceptionHostPort (HandshakeFailed (Error_Packet_unexpected "Alert [(AlertLevel_Fatal,IllegalParameter)]" " expected: change cipher")) "stream.twitter.com" 443
+[12/Sep/2016:15:09:51 -0400] During processing of request from 127.0.0.1:50906
+request:
+"GET /rand HTTP/1.1\naccept-language: en-GB,en;q=0.8,nb;q=0.6\naccept-encoding: gzip, deflate, sdch\nreferer: http://localhost:8000/\ndnt: 1\nuser-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.101 Safari/537.36\norigin: http://evil.com/\naccept: */*\nconnection: keep-alive\nhost: 0.0.0.0:8000\n\nsn=\"0.0.0.0:8000\" c=127.0.0.1:50906 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+TlsExceptionHostPort (HandshakeFailed (Error_Packet_unexpected "Alert [(AlertLevel_Fatal,IllegalParameter)]" " expected: change cipher")) "stream.twitter.com" 443
+[12/Sep/2016:15:12:54 -0400] During processing of request from 127.0.0.1:50992
+request:
+"GET /rand HTTP/1.1\naccept-language: en-GB,en;q=0.8,nb;q=0.6\naccept-encoding: gzip, deflate, sdch\nreferer: http://localhost:8000/\ndnt: 1\nuser-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.101 Safari/537.36\norigin: http://evil.com/\naccept: */*\nconnection: keep-alive\nhost: 0.0.0.0:8000\n\nsn=\"0.0.0.0:8000\" c=127.0.0.1:50992 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+TlsExceptionHostPort (HandshakeFailed (Error_Packet_unexpected "Alert [(AlertLevel_Fatal,IllegalParameter)]" " expected: change cipher")) "stream.twitter.com" 443
+[12/Sep/2016:15:46:37 -0400] During processing of request from 127.0.0.1:51761
+request:
+"GET /rand HTTP/1.1\naccept-language: en-GB,en;q=0.8,nb;q=0.6\naccept-encoding: gzip, deflate, sdch\nreferer: http://localhost:8000/\ndnt: 1\nuser-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.101 Safari/537.36\norigin: http://localhost:8000\naccept: */*\nconnection: keep-alive\nhost: 0.0.0.0:8000\n\nsn=\"0.0.0.0:8000\" c=127.0.0.1:51761 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+TlsExceptionHostPort (HandshakeFailed (Error_Packet_unexpected "Alert [(AlertLevel_Fatal,IllegalParameter)]" " expected: change cipher")) "stream.twitter.com" 443
+[12/Sep/2016:15:46:42 -0400] During processing of request from 127.0.0.1:51761
+request:
+"GET /rand HTTP/1.1\naccept-language: en-GB,en;q=0.8,nb;q=0.6\naccept-encoding: gzip, deflate, sdch\nreferer: http://localhost:8000/\ndnt: 1\nuser-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.101 Safari/537.36\norigin: http://localhost:8000\naccept: */*\nconnection: keep-alive\nhost: 0.0.0.0:8000\n\nsn=\"0.0.0.0:8000\" c=127.0.0.1:51761 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+TlsExceptionHostPort (HandshakeFailed (Error_Packet_unexpected "Alert [(AlertLevel_Fatal,IllegalParameter)]" " expected: change cipher")) "stream.twitter.com" 443

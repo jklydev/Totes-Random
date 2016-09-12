@@ -16,8 +16,9 @@ main = quickHttpServe site
 site :: Snap ()
 site =
     ifTop topHandler <|>
-    route [ ("foo", writeBS "bar")
-          , ("rand", echoHandler)
+    route [("rand", echoHandler),
+           ("bits",bitsHandler),
+           ("int",intHandler)
           ] <|>
     dir "static" (serveDirectory ".")
 
@@ -26,6 +27,12 @@ topHandler = do
   page <- liftIO $ readFile "./index.html"
   let maybePage = Just (B.pack page)
   maybe (writeBS "didn't work") writeBS maybePage
+
+bitsHandler :: Snap ()
+bitsHandler = undefined
+
+intHandler :: Snap ()
+intHandler = undefined
 
 echoHandler :: Snap ()
 echoHandler = do
