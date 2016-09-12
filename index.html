@@ -17,6 +17,7 @@
 				tweets.forEach(function(tweet) {
 					const data = {
 						url: "https://" + tweet,
+						hide_media: 'true'
 					};
 
 					$.ajax({
