@@ -21,8 +21,11 @@ import Data.Hashable
 import Data.Aeson (ToJSON(toJSON), object, (.=))
 
 query :: APIRequest StatusesFilter StreamingAPI
-query = statusesFilter [Track ["random", "stochastic","probability","randos","entropy","totes random","serendipity","coincidence","surprise","bayes","baes","laplace","unlikely","million to one","lottery","las vegas","monte carlo","monty python","MCMC","astrology"]]
--- query = statusesFilter [Track ["stochastic","probability","entropy","bayes","laplace","MCMC","variational","inference","p-value"]]
+query = statusesFilter [Track ["random", "gaussian","cauchy","exponential","gamma","the hulk",
+  "chi-squared","chai latte","wishart","correlation","implies","causality","stochastic",
+  "probability","randos","entropy","totes random","serendipity","coincidence","surprise",
+  "bayes","baes","laplace","lapdance","unlikely","million to one","lottery","las vegas",
+  "monte carlo","monty python","MCMC","astrology","heart of gold"]]
 
 data TwitterSeed a = TwitterSeed {val::a , tweets::[String]}
 
