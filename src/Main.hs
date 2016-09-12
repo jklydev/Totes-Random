@@ -8,17 +8,24 @@ import Snap.Http.Server
 import RandomHandler (randVal)
 import qualified Data.ByteString.Char8 as B
 import Control.Monad.IO.Class (liftIO)
+import System.IO (FilePath,readFile)
 
 main :: IO ()
 main = quickHttpServe site
 
 site :: Snap ()
 site =
-    ifTop (writeBS "hello world") <|>
+    ifTop topHandler <|>
     route [ ("foo", writeBS "bar")
           , ("rand", echoHandler)
           ] <|>
     dir "static" (serveDirectory ".")
+
+topHandler :: Snap ()
+topHandler = do
+  page <- liftIO $ readFile "./index.html"
+  let maybePage = Just (B.pack page)
+  maybe (writeBS "didn't work") writeBS maybePage
 
 echoHandler :: Snap ()
 echoHandler = do
