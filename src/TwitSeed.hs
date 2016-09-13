@@ -15,7 +15,6 @@ import qualified Data.Text.IO as T
 import Control.Monad.IO.Class (liftIO)
 import Control.Lens ((^.))
 import Control.Monad.Trans.Resource (runResourceT)
--- import Data.Char (ord)
 import Info -- twitter API credential
 import Data.Hashable
 import Data.Aeson (ToJSON(toJSON), object, (.=))
@@ -23,9 +22,8 @@ import Data.Aeson (ToJSON(toJSON), object, (.=))
 query :: APIRequest StatusesFilter StreamingAPI
 query = statusesFilter [Track ["random", "gaussian","cauchy","exponential","gamma","the hulk",
   "chi-squared","chai latte","wishart","correlation","implies","causality","stochastic",
-  "probability","randos","entropy","totes random","serendipity","coincidence","surprise",
-  "bayes","baes","laplace","lapdance","unlikely","million to one","lottery","las vegas",
-  "monte carlo","monty python","MCMC","astrology","heart of gold"]]
+  "bayes","baes","laplace","unlikely","million to one","lottery","las vegas","distribution",
+  "monte carlo","monty python","MCMC","astrology","accidental","heart of gold"]]
 
 data TwitterSeed a = TwitterSeed {val::a , tweets::[String]}
 
@@ -42,15 +40,13 @@ twit = do
 testProc = do
   tweet <- await
   case tweet of (Just (SStatus status)) -> do
-                  --(liftIO . print) (status ^. statusText)
                   yield tweet
                   testProc
                 otherwise -> do
-                    -- (liftIO . return) ()
                     testProc
 
 makeURL :: (String, String) -> String
-makeURL (userID,tweetId) = "twitter.com/" ++ userID ++ "/status/" ++ tweetId
+makeURL (userID,tweetId) = "https://twitter.com/" ++ userID ++ "/status/" ++ tweetId
 
 twitInt :: TwitterSeed Int -> Maybe (String,(String,String)) -> TwitterSeed Int
 twitInt (TwitterSeed acc ids) (Just (tweet,tweetId)) = TwitterSeed (acc + (hashWithSalt l tweet)) ((makeURL tweetId):ids)

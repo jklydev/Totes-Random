@@ -1,64 +1,51 @@
 <!DOCTYPE html>
 
 <html>
-	<head>
-		<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
-		<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+  <head>
+    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
 
-		<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
-		<link rel='stylesheet' type='text/css' href='tweet_style.css'>
-	</head>
-	<body>
-		<script type='text/javascript'>
-			function addTweet(data) {
-				$('#tweets').append(data.html);
-			}
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+    <link rel='stylesheet' type='text/css' href='tweet_style.css'>
+  </head>
+  <body>
+    <script type='text/javascript'>
+      function addTweets(tweets) {
+        $('#number').append('<h4>here\'s the tweets it came from.</h4>');
+        $('#tweets').empty();
+        tweets.forEach((tweet) => { $('#tweets').append(tweet); });
+      }
+      function getNumberAndTweets() {
+        console.log("found this function");
+        $.ajax({
+          url: 'http://0.0.0.0:8000/rand',
+          method: 'GET',
+          contentType: 'application/json;charset=ISO-8859-15',
+          success: (resp) => {
+            $('#number').empty();
+            const data = JSON.parse(JSON.parse(resp));
+            $('#number').append('<h4>here\'s a random number. it\'s from twitter.<h4><h5>(1000% cryptographically valid.)</h5><h2>' + data.value + '</h2>');
+            addTweets(data['tweet ids']);
+          },
+          error: (obj, textStatus, errorThrown) => {
+            console.log(textStatus, errorThrown);
+          }
+        });
+      }
+      function generate() {
+        getNumberAndTweets();
+      }
+    </script>
 
-			function getTweetHTML(tweets) {
-				$('#number').append('<h4>here\'s the tweets it came from.</h4>');
-				$('#tweets').empty();
-
-				tweets.forEach((tweet) => {
-					// const request = 'https://publish.twitter.com/oembed?url=https://' + tweet + '?' + 'hide_media=true?callback=addTweet';
-
-					// eval(request);
-
-					$('#tweets').append(tweet);
-				});
-			} 
-
-			function getNumberAndTweets() {
-				$.ajax({
-					url: 'http://0.0.0.0:8000/rand',
-					method: 'GET',
-
-					success: (resp) => {
-						$('#number').empty();
-						const data = JSON.parse(JSON.parse(resp));
-						$('#number').append('<h4>here\'s a random number. it\'s from twitter.<h4><h5>(1000% cryptographically valid.)</h5><h2>' + data.value + '</h2>');
-						getTweetHTML(data['tweet ids']);
-					},
-
-					error: (obj, textStatus, errorThrown) => {
-						console.log(textStatus, errorThrown);
-					}
-				});
-			}
-
-			function generate() {
-				getNumberAndTweets();
-			};
-		</script>
-
-		<h1>totes random.</h1>
-		<br>
-		<button type='button' class='btn btn-primary' onclick='generate'>
-			<h5>do probability</h5>
-		</button>
-		<hr>
-		<div id='number'>
-		</div>
-		<div id='tweets'>
-		</div>
-	</body>
+    <h1>totes random.</h1>
+    <br>
+    <button type='button' class='btn btn-primary' onclick='generate()'>
+      <h5>do probability</h5>
+    </button>
+    <hr>
+    <div id='number'>
+    </div>
+    <div id='tweets'>
+    </div>
+  </body>
 </html>

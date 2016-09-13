@@ -3,3 +3,4 @@ Info.hs
 .stack-work
 log/*
 .ghci
+unused
