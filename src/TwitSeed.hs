@@ -50,7 +50,7 @@ testProc = do
                     testProc
 
 makeURL :: (String, String) -> String
-makeURL (userID,tweetId) = "twitter.com/" ++ userID ++ "/status/" ++ tweetId
+makeURL (userID,tweetId) = "https://twitter.com/" ++ userID ++ "/status/" ++ tweetId
 
 twitInt :: TwitterSeed Int -> Maybe (String,(String,String)) -> TwitterSeed Int
 twitInt (TwitterSeed acc ids) (Just (tweet,tweetId)) = TwitterSeed (acc + (hashWithSalt l tweet)) ((makeURL tweetId):ids)

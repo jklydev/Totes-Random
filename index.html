@@ -15,13 +15,14 @@
         $('#tweets').empty();
 
         tweets.forEach((tweet) => { $('#tweets').append(tweet); });
-      } 
+      }
 
       function getNumberAndTweets() {
+        console.log("found this function");
         $.ajax({
           url: 'http://0.0.0.0:8000/rand',
           method: 'GET',
-
+          contentType: 'application/json;charset=ISO-8859-15',
           success: (resp) => {
             $('#number').empty();
             const data = JSON.parse(JSON.parse(resp));
@@ -34,11 +35,14 @@
           }
         });
       }
+      function generate() {
+        getNumberAndTweets();
+      }
     </script>
 
     <h1>totes random.</h1>
     <br>
-    <button type='button' class='btn btn-primary' onclick='getNumberAndTweets'>
+    <button type='button' class='btn btn-primary' onclick='generate()'>
       <h5>do probability</h5>
     </button>
     <hr>
