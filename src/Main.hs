@@ -5,7 +5,7 @@ import Control.Applicative
 import Snap.Core
 import Snap.Util.FileServe
 import Snap.Http.Server
-import RandomHandler (randVal)
+import RandomHandler
 import qualified Data.ByteString.Char8 as B
 import Control.Monad.IO.Class (liftIO)
 import System.IO (FilePath,readFile)
@@ -17,6 +17,7 @@ site :: Snap ()
 site =
     ifTop topHandler <|>
     route [("rand", echoHandler),
+           ("float",floatHandler),
            ("bits",bitsHandler),
            ("int",intHandler)
           ] <|>
@@ -29,10 +30,22 @@ topHandler = do
   maybe (writeBS "didn't work") writeBS maybePage
 
 bitsHandler :: Snap ()
-bitsHandler = undefined
+bitsHandler = do
+  val <- liftIO $ randVal' "bits"
+  let rVal = Just (B.pack val)
+  maybe(writeBS "failed to generate random bits") writeBS rVal
 
 intHandler :: Snap ()
-intHandler = undefined
+intHandler =  do
+  val <- liftIO $ randVal' "integer"
+  let rVal = Just (B.pack val)
+  maybe(writeBS "failed to generate a random interger") writeBS rVal
+
+floatHandler :: Snap ()
+floatHandler =  do
+  val <- liftIO $ randVal' "float"
+  let rVal = Just (B.pack val)
+  maybe(writeBS "failed to generate random bits") writeBS rVal
 
 echoHandler :: Snap ()
 echoHandler = do

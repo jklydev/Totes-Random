@@ -14,9 +14,9 @@ How It Works
 ------------
 To start with, to ensure statistical validity, we search the Twitter streaming API for only the most statistically valid terms:
 
-> "random", "stochastic", "probability", "randos", "entropy", "totes random", "serendipity", "coincidence", "surprise", "bayes", "baes", "laplace", "unlikely", "million to one", "lottery", "las vegas", "monte carlo", "monty python", "MCMC", "astrology"
+> "random", "gaussian","cauchy","exponential","gamma","the hulk","chi-squared","chai latte","wishart","correlation","implies","causality","stochastic","bayes","baes","laplace","unlikely","million to one","lottery","las vegas","distribution","monte carlo","monty python","MCMC","astrology","accidental","heart of gold"
 
-We then extract the first 10 of these tweets (a random number we determined by rolling a d20) and hash them. This hash is then passed though the Mersenne Twister before being used to seed Haskell's own random number generator, all to ensure that triple thick cryptographical goodness.
+We then extract the first 9 of these tweets (a random number we determined by rolling a d20) and hash them. This hash is then passed though the Mersenne Twister before being used to seed Haskell's own random number generator, all to ensure that triple thick cryptographical goodness.
 
 
 How To Use It
