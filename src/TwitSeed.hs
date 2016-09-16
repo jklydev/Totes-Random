@@ -5,6 +5,7 @@ module TwitSeed
       ,TwitterSeed(..)
       ) where
 
+import GetInfo
 import Web.Twitter.Conduit
 import Web.Twitter.Conduit.Stream
 import Web.Twitter.Types.Lens
@@ -15,7 +16,7 @@ import qualified Data.Text.IO as T
 import Control.Monad.IO.Class (liftIO)
 import Control.Lens ((^.))
 import Control.Monad.Trans.Resource (runResourceT)
-import Info -- twitter API credential
+-- import Info -- twitter API credential
 import Data.Hashable
 import Data.Aeson (ToJSON(toJSON), object, (.=))
 
@@ -32,6 +33,7 @@ instance (ToJSON a) => ToJSON (TwitterSeed a) where
 
 twit :: IO (TwitterSeed Int)
 twit = do
+  twInfo <- getTWInfoFromEnv
   mgr <- newManager tlsManagerSettings
   runResourceT $ do
     src <- stream twInfo mgr query

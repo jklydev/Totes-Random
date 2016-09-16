@@ -8,7 +8,7 @@ module RandomHandler
 
 
 import TwitSeed
-import Info
+-- import Info
 import System.Random (randomR,randomRs,mkStdGen)
 import System.Random.Mersenne.Pure64 (pureMT,randomInt)
 import Data.Aeson (ToJSON(toJSON),FromJSON(..),Value(Object),(.:),encode,decode)

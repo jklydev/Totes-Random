@@ -15,7 +15,7 @@ cabal-version:       >=1.10
 library
   hs-source-dirs:      src
   exposed-modules:     TwitSeed
-                     , Info
+                     , GetInfo
                      , RandomHandler
   build-depends:       base >= 4.7 && < 5
                      , conduit
@@ -32,6 +32,10 @@ library
                      , http-conduit
                      , http-client
                      , http-client-tls
+                     , case-insensitive
+                     , containers
+                     , network-uri
+                     , bytestring
   default-language:    Haskell2010
 
 executable totes-random
@@ -54,6 +58,9 @@ executable totes-random
                      , http-client
                      , http-client-tls
                      , hashable
+                     , case-insensitive
+                     , containers
+                     , network-uri
                      , bytestring                >= 0.9.1 && < 0.11
                      , monad-control             >= 1.0   && < 1.1
                      , mtl                       >= 2     && < 3
