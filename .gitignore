@@ -1,6 +1,6 @@
 Creds.hs
 Info.hs
 .stack-work
-log/*
 .ghci
 unused
+log/*        
