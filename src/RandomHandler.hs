@@ -42,6 +42,6 @@ randVal' rType = do
                   (TwitterSeed twint tweets) <- twit
                   let mersenne = pureMT $ fromIntegral twint
                       randoCalinteger = fst $ randomInt mersenne
-                  case rType of "integer" -> (return . show) $ (fst $ randomR (0,1) (mkStdGen randoCalinteger) :: Integer)
+                  case rType of "integer" -> (return . show) $ (fst $ random (mkStdGen randoCalinteger) :: Integer)
                                 "bits"    -> return $ concatMap show $ take 140 $ (randomRs (0,1) (mkStdGen randoCalinteger) :: [Integer])
                                 "float"   -> (return . show) $ (fst $ randomR (0,1) (mkStdGen randoCalinteger) :: Double)
