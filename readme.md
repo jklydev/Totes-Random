@@ -4,6 +4,7 @@ Totes Random
 
 A 1000% secure random number generator using Twitter as a source of entropy.
 
+<img src="http://www.jkiely.co.uk/images/totes_random.png">
 
 Introduction
 ------------
@@ -21,4 +22,20 @@ We then extract the first 9 of these tweets (a random number we determined by ro
 
 How To Use It
 -------------
-Visit http://www.totes-random.website/ in order to get a random number between 0 and 1, and also to see the tweets it came from. If you want to use the number in an application then http://www.totes-random.website/float will give you the number as plain text with no tweet, and http://www.totes-random.website/bits will give you exactly 140 random bits. To see an example application that uses our API, or to understand why we chose 140 as the number of bits to return, see [totes-random-bot](https://github.com/JKiely/Totes-Random-Bot).
+Visit http://www.totes-random.website/ in order to get a random number between 0 and 1, and also to see the tweets it came from. 
+
+If you want to use the number in an application then we also have an API:
+
+### Get a Float
+http://www.totes-random.website/float 
+Gives you a 32-bit float between 0 and 1 in plain text.
+
+### Get an Int
+http://www.totes-random.website/int
+Gives you a 32-bit signed integer 
+
+### Get bits
+http://www.totes-random.website/bits
+Gives you exactly 140 random bits.
+
+To see an example of this API in action, or to understand why we chose 140 as the number of bits to return, please direct your gaze to [totes-random-bot](https://github.com/JKiely/Totes-Random-Bot).
