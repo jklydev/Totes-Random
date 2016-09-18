@@ -16,15 +16,16 @@ import qualified Data.Text.IO as T
 import Control.Monad.IO.Class (liftIO)
 import Control.Lens ((^.))
 import Control.Monad.Trans.Resource (runResourceT)
--- import Info -- twitter API credential
 import Data.Hashable
 import Data.Aeson (ToJSON(toJSON), object, (.=))
 
 query :: APIRequest StatusesFilter StreamingAPI
-query = statusesFilter [Track ["random", "gaussian","cauchy","exponential","gamma","the hulk",
-  "chi-squared","chai latte","wishart","correlation","implies","causality","stochastic",
-  "bayes","baes","laplace","unlikely","million to one","lottery","las vegas","distribution",
-  "monte carlo","monty python","MCMC","astrology","accidental","heart of gold"]]
+query = statusesFilter [Track ["random", "chance", "dice", "gaussian", "cauchy", "exponential",
+                               "gamma", "chi-squared", "wishart", "correlation", "implies",
+                               "causality", "stochastic", "bayes", "baes", "laplace", "unlikely",
+                               "million to one", "lottery", "las vegas", "roulette", "distribution",
+                               "monte carlo", "monty python", "MCMC", "astrology", "accidental",
+                               "heart of gold", "spork", "penguin of doom"]]
 
 data TwitterSeed a = TwitterSeed {val::a , tweets::[String]}
 
