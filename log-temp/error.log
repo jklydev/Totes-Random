@@ -1,0 +1,300 @@
+[31/Aug/2016:15:28:15 -0400] During processing of request from 127.0.0.1:37932
+request:
+"GET /rand HTTP/1.1\ncache-control: max-age=0\nupgrade-insecure-requests: 1\nconnection: keep-alive\naccept-encoding: gzip, deflate\naccept-language: en-US,en;q=0.5\naccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\nuser-agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:48.0) Gecko/20100101 Firefox/48.0\nhost: localhost:8000\n\nsn=\"localhost:8000\" c=127.0.0.1:37932 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+TlsExceptionHostPort (HandshakeFailed (Error_Packet_unexpected "Alert [(AlertLevel_Fatal,IllegalParameter)]" " expected: change cipher")) "stream.twitter.com" 443
+[01/Sep/2016:17:07:36 -0400] During processing of request from 127.0.0.1:54365
+request:
+"GET /rand HTTP/1.1\naccept-language: en-GB,en;q=0.8,nb;q=0.6\naccept-encoding: gzip, deflate, sdch\ndnt: 1\nuser-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36\norigin: http://evil.com/\naccept: */*\nconnection: keep-alive\nhost: 0.0.0.0:8000\n\nsn=\"0.0.0.0:8000\" c=127.0.0.1:54365 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+TlsExceptionHostPort (HandshakeFailed (Error_Packet_unexpected "Alert [(AlertLevel_Fatal,IllegalParameter)]" " expected: change cipher")) "stream.twitter.com" 443
+[01/Sep/2016:17:07:46 -0400] During processing of request from 127.0.0.1:54365
+request:
+"GET /rand HTTP/1.1\naccept-language: en-GB,en;q=0.8,nb;q=0.6\naccept-encoding: gzip, deflate, sdch\ndnt: 1\nuser-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36\norigin: http://evil.com/\naccept: */*\nconnection: keep-alive\nhost: 0.0.0.0:8000\n\nsn=\"0.0.0.0:8000\" c=127.0.0.1:54365 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+TlsExceptionHostPort (HandshakeFailed (Error_Packet_unexpected "Alert [(AlertLevel_Fatal,IllegalParameter)]" " expected: change cipher")) "stream.twitter.com" 443
+[01/Sep/2016:17:07:48 -0400] During processing of request from 127.0.0.1:54365
+request:
+"GET /rand HTTP/1.1\naccept-language: en-GB,en;q=0.8,nb;q=0.6\naccept-encoding: gzip, deflate, sdch\ndnt: 1\nuser-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36\norigin: http://evil.com/\naccept: */*\nconnection: keep-alive\nhost: 0.0.0.0:8000\n\nsn=\"0.0.0.0:8000\" c=127.0.0.1:54365 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+TlsExceptionHostPort (HandshakeFailed (Error_Packet_unexpected "Alert [(AlertLevel_Fatal,IllegalParameter)]" " expected: change cipher")) "stream.twitter.com" 443
+[01/Sep/2016:17:07:54 -0400] During processing of request from 127.0.0.1:54365
+request:
+"GET /rand HTTP/1.1\naccept-language: en-GB,en;q=0.8,nb;q=0.6\naccept-encoding: gzip, deflate, sdch\ndnt: 1\nuser-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36\norigin: http://evil.com/\naccept: */*\nconnection: keep-alive\nhost: 0.0.0.0:8000\n\nsn=\"0.0.0.0:8000\" c=127.0.0.1:54365 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+ParseError {errorContexts = [], errorMessage = "Failed reading: not a valid json value", errorPosition = 1:1}
+[01/Sep/2016:17:07:55 -0400] During processing of request from 127.0.0.1:54380
+request:
+"GET /rand HTTP/1.1\naccept-language: en-GB,en;q=0.8,nb;q=0.6\naccept-encoding: gzip, deflate, sdch\ndnt: 1\nuser-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36\norigin: http://evil.com/\naccept: */*\nconnection: keep-alive\nhost: 0.0.0.0:8000\n\nsn=\"0.0.0.0:8000\" c=127.0.0.1:54380 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+ParseError {errorContexts = [], errorMessage = "Failed reading: not a valid json value", errorPosition = 1:1}
+[01/Sep/2016:17:07:55 -0400] During processing of request from 127.0.0.1:54382
+request:
+"GET /rand HTTP/1.1\naccept-language: en-GB,en;q=0.8,nb;q=0.6\naccept-encoding: gzip, deflate, sdch\ndnt: 1\nuser-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36\norigin: http://evil.com/\naccept: */*\nconnection: keep-alive\nhost: 0.0.0.0:8000\n\nsn=\"0.0.0.0:8000\" c=127.0.0.1:54382 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+ParseError {errorContexts = [], errorMessage = "Failed reading: not a valid json value", errorPosition = 1:1}
+[01/Sep/2016:17:12:00 -0400] During processing of request from 127.0.0.1:54434
+request:
+"GET /rand HTTP/1.1\naccept-language: en-GB,en;q=0.8,nb;q=0.6\naccept-encoding: gzip, deflate, sdch\ndnt: 1\nuser-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36\norigin: http://evil.com/\naccept: */*\nconnection: keep-alive\nhost: 0.0.0.0:8000\n\nsn=\"0.0.0.0:8000\" c=127.0.0.1:54434 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+ParseError {errorContexts = [], errorMessage = "Failed reading: not a valid json value", errorPosition = 1:1}
+[01/Sep/2016:17:13:35 -0400] During processing of request from 127.0.0.1:54434
+request:
+"GET /rand HTTP/1.1\naccept-language: en-GB,en;q=0.8,nb;q=0.6\naccept-encoding: gzip, deflate, sdch\ndnt: 1\nuser-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36\norigin: http://evil.com/\naccept: */*\nconnection: keep-alive\nhost: 0.0.0.0:8000\n\nsn=\"0.0.0.0:8000\" c=127.0.0.1:54434 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+TlsExceptionHostPort (HandshakeFailed (Error_Packet_unexpected "Alert [(AlertLevel_Fatal,IllegalParameter)]" " expected: change cipher")) "stream.twitter.com" 443
+[01/Sep/2016:17:15:28 -0400] During processing of request from 127.0.0.1:54507
+request:
+"GET /rand HTTP/1.1\naccept-language: en-GB,en;q=0.8,nb;q=0.6\naccept-encoding: gzip, deflate, sdch\ndnt: 1\nuser-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36\norigin: http://evil.com/\naccept: */*\nconnection: keep-alive\nhost: 0.0.0.0:8000\n\nsn=\"0.0.0.0:8000\" c=127.0.0.1:54507 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+TlsExceptionHostPort (HandshakeFailed (Error_Packet_unexpected "Alert [(AlertLevel_Fatal,IllegalParameter)]" " expected: change cipher")) "stream.twitter.com" 443
+[01/Sep/2016:17:17:51 -0400] During processing of request from 127.0.0.1:54539
+request:
+"GET /rand HTTP/1.1\naccept-language: en-GB,en;q=0.8,nb;q=0.6\naccept-encoding: gzip, deflate, sdch\ndnt: 1\nuser-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36\norigin: http://evil.com/\naccept: */*\nconnection: keep-alive\nhost: 0.0.0.0:8000\n\nsn=\"0.0.0.0:8000\" c=127.0.0.1:54539 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+TlsExceptionHostPort (HandshakeFailed (Error_Packet_unexpected "Alert [(AlertLevel_Fatal,IllegalParameter)]" " expected: change cipher")) "stream.twitter.com" 443
+[01/Sep/2016:17:18:39 -0400] During processing of request from 127.0.0.1:54539
+request:
+"GET /rand HTTP/1.1\naccept-language: en-GB,en;q=0.8,nb;q=0.6\naccept-encoding: gzip, deflate, sdch\ndnt: 1\nuser-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36\norigin: http://evil.com/\naccept: */*\nconnection: keep-alive\nhost: 0.0.0.0:8000\n\nsn=\"0.0.0.0:8000\" c=127.0.0.1:54539 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+TlsExceptionHostPort (HandshakeFailed (Error_Packet_unexpected "Alert [(AlertLevel_Fatal,IllegalParameter)]" " expected: change cipher")) "stream.twitter.com" 443
+[01/Sep/2016:17:19:53 -0400] During processing of request from 127.0.0.1:54539
+request:
+"GET /rand HTTP/1.1\naccept-language: en-GB,en;q=0.8,nb;q=0.6\naccept-encoding: gzip, deflate, sdch\ndnt: 1\nuser-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36\norigin: http://evil.com/\naccept: */*\nconnection: keep-alive\nhost: 0.0.0.0:8000\n\nsn=\"0.0.0.0:8000\" c=127.0.0.1:54539 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+TlsExceptionHostPort (HandshakeFailed (Error_Packet_unexpected "Alert [(AlertLevel_Fatal,IllegalParameter)]" " expected: change cipher")) "stream.twitter.com" 443
+[01/Sep/2016:17:20:56 -0400] During processing of request from 127.0.0.1:54539
+request:
+"GET /rand HTTP/1.1\naccept-language: en-GB,en;q=0.8,nb;q=0.6\naccept-encoding: gzip, deflate, sdch\ndnt: 1\nuser-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36\norigin: http://evil.com/\naccept: */*\nconnection: keep-alive\nhost: 0.0.0.0:8000\n\nsn=\"0.0.0.0:8000\" c=127.0.0.1:54539 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+TlsExceptionHostPort (HandshakeFailed (Error_Packet_unexpected "Alert [(AlertLevel_Fatal,IllegalParameter)]" " expected: change cipher")) "stream.twitter.com" 443
+[01/Sep/2016:17:22:04 -0400] During processing of request from 127.0.0.1:54601
+request:
+"GET /rand HTTP/1.1\naccept-language: en-GB,en;q=0.8,nb;q=0.6\naccept-encoding: gzip, deflate, sdch\ndnt: 1\nuser-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36\norigin: http://evil.com/\naccept: */*\nconnection: keep-alive\nhost: 0.0.0.0:8000\n\nsn=\"0.0.0.0:8000\" c=127.0.0.1:54601 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+TlsExceptionHostPort (HandshakeFailed (Error_Packet_unexpected "Alert [(AlertLevel_Fatal,IllegalParameter)]" " expected: change cipher")) "stream.twitter.com" 443
+[01/Sep/2016:17:23:58 -0400] During processing of request from 127.0.0.1:54638
+request:
+"GET /rand HTTP/1.1\naccept-language: en-GB,en;q=0.8,nb;q=0.6\naccept-encoding: gzip, deflate, sdch\ndnt: 1\nuser-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36\norigin: http://evil.com/\naccept: */*\nconnection: keep-alive\nhost: 0.0.0.0:8000\n\nsn=\"0.0.0.0:8000\" c=127.0.0.1:54638 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+TlsExceptionHostPort (HandshakeFailed (Error_Packet_unexpected "Alert [(AlertLevel_Fatal,IllegalParameter)]" " expected: change cipher")) "stream.twitter.com" 443
+[01/Sep/2016:17:26:00 -0400] During processing of request from 127.0.0.1:54671
+request:
+"GET /rand HTTP/1.1\naccept-language: en-GB,en;q=0.8,nb;q=0.6\naccept-encoding: gzip, deflate, sdch\ndnt: 1\nuser-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36\norigin: http://evil.com/\naccept: */*\nconnection: keep-alive\nhost: 0.0.0.0:8000\n\nsn=\"0.0.0.0:8000\" c=127.0.0.1:54671 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+TlsExceptionHostPort (HandshakeFailed (Error_Packet_unexpected "Alert [(AlertLevel_Fatal,IllegalParameter)]" " expected: change cipher")) "stream.twitter.com" 443
+[01/Sep/2016:17:33:42 -0400] During processing of request from 127.0.0.1:54808
+request:
+"GET /rand HTTP/1.1\naccept-language: en-GB,en;q=0.8,nb;q=0.6\naccept-encoding: gzip, deflate, sdch\ndnt: 1\nuser-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36\norigin: http://evil.com/\naccept: */*\nconnection: keep-alive\nhost: 0.0.0.0:8000\n\nsn=\"0.0.0.0:8000\" c=127.0.0.1:54808 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+TlsExceptionHostPort (HandshakeFailed (Error_Packet_unexpected "Alert [(AlertLevel_Fatal,IllegalParameter)]" " expected: change cipher")) "stream.twitter.com" 443
+[12/Sep/2016:16:43:49 -0400] During processing of request from 127.0.0.1:38381
+request:
+"GET /rand HTTP/1.1\ncache-control: max-age=0\nupgrade-insecure-requests: 1\nconnection: keep-alive\naccept-encoding: gzip, deflate\naccept-language: en-US,en;q=0.5\naccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\nuser-agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:48.0) Gecko/20100101 Firefox/48.0\nhost: localhost:8000\n\nsn=\"localhost:8000\" c=127.0.0.1:38381 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+user error (https not supported)
+[12/Sep/2016:16:53:46 -0400] During processing of request from 127.0.0.1:38461
+request:
+"GET /rand HTTP/1.1\ncache-control: max-age=0\nupgrade-insecure-requests: 1\nconnection: keep-alive\naccept-encoding: gzip, deflate\naccept-language: en-US,en;q=0.5\naccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\nuser-agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:48.0) Gecko/20100101 Firefox/48.0\nhost: localhost:8000\n\nsn=\"localhost:8000\" c=127.0.0.1:38461 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+user error (https not supported)
+[12/Sep/2016:17:21:53 -0400] During processing of request from 127.0.0.1:38633
+request:
+"GET /rand HTTP/1.1\ncache-control: max-age=0\nupgrade-insecure-requests: 1\nconnection: keep-alive\naccept-encoding: gzip, deflate\naccept-language: en-US,en;q=0.5\naccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\nuser-agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:48.0) Gecko/20100101 Firefox/48.0\nhost: localhost:8000\n\nsn=\"localhost:8000\" c=127.0.0.1:38633 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+TlsExceptionHostPort (HandshakeFailed (Error_Packet_unexpected "Alert [(AlertLevel_Fatal,IllegalParameter)]" " expected: change cipher")) "twitter.com" 443
+[12/Sep/2016:17:48:40 -0400] During processing of request from 127.0.0.1:38745
+request:
+"GET /rand HTTP/1.1\ncache-control: max-age=0\nupgrade-insecure-requests: 1\nconnection: keep-alive\naccept-encoding: gzip, deflate\naccept-language: en-US,en;q=0.5\naccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\nuser-agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:48.0) Gecko/20100101 Firefox/48.0\nhost: localhost:8000\n\nsn=\"localhost:8000\" c=127.0.0.1:38745 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+JSONParseException Request {
+  host                 = "twitter.com"
+  port                 = 443
+  secure               = True
+  requestHeaders       = []
+  path                 = "/elenawug19691/status/775451083820896256"
+  queryString          = ""
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = Just (-3425)
+  requestVersion       = HTTP/1.1
+}
+ (Response {responseStatus = Status {statusCode = 200, statusMessage = "OK"}, responseVersion = HTTP/1.1, responseHeaders = [("cache-control","no-cache, no-store, must-revalidate, pre-check=0, post-check=0"),("content-encoding","gzip"),("content-length","29160"),("content-type","text/html;charset=utf-8"),("date","Mon, 12 Sep 2016 21:48:40 GMT"),("expires","Tue, 31 Mar 1981 05:00:00 GMT"),("last-modified","Mon, 12 Sep 2016 21:48:40 GMT"),("pragma","no-cache"),("server","tsa_b"),("set-cookie","fm=0; Expires=Mon, 12 Sep 2016 21:48:30 UTC; Path=/; Domain=.twitter.com; Secure; HTTPOnly"),("set-cookie","_twitter_sess=BAh7CSIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%250ASGFzaHsABjoKQHVzZWR7ADoPY3JlYXRlZF9hdGwrCBeiXyBXAToMY3NyZl9p%250AZCIlMTk5MzFkYmFlZmI3MTVkZDhiNGMwMTlmNjk3OWVkNWU6B2lkIiU2YzNi%250ANTlmODdiYTM0Y2YzMTUxZDM5ZTQ1NzU3N2NlYw%253D%253D--1da39c902a72cb0356639f230b7776b78834af90; Path=/; Domain=.twitter.com; Secure; HTTPOnly"),("set-cookie","guest_id=v1%3A147371692085465407; Domain=.twitter.com; Path=/; Expires=Wed, 12-Sep-2018 21:48:40 UTC"),("status","200 OK"),("strict-transport-security","max-age=631138519"),("x-connection-hash","be7490ac359d6a35afea071f762c6870"),("x-content-type-options","nosniff"),("x-frame-options","SAMEORIGIN"),("x-response-time","64"),("x-transaction","000216300098b2e8"),("x-twitter-response-tags","BouncerCompliant"),("x-ua-compatible","IE=edge,chrome=1"),("x-xss-protection","1; mode=block")], responseBody = (), responseCookieJar = CJ {expose = [Cookie {cookie_name = "guest_id", cookie_value = "v1%3A147371692085465407", cookie_expiry_time = 3016-01-14 00:00:00 UTC, cookie_domain = "twitter.com", cookie_path = "/", cookie_creation_time = 2016-09-12 21:48:40.923443241 UTC, cookie_last_access_time = 2016-09-12 21:48:40.923443241 UTC, cookie_persistent = False, cookie_host_only = False, cookie_secure_only = False, cookie_http_only = False},Cookie {cookie_name = "_twitter_sess", cookie_value = "BAh7CSIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%250ASGFzaHsABjoKQHVzZWR7ADoPY3JlYXRlZF9hdGwrCBeiXyBXAToMY3NyZl9p%250AZCIlMTk5MzFkYmFlZmI3MTVkZDhiNGMwMTlmNjk3OWVkNWU6B2lkIiU2YzNi%250ANTlmODdiYTM0Y2YzMTUxZDM5ZTQ1NzU3N2NlYw%253D%253D--1da39c902a72cb0356639f230b7776b78834af90", cookie_expiry_time = 3016-01-14 00:00:00 UTC, cookie_domain = "twitter.com", cookie_path = "/", cookie_creation_time = 2016-09-12 21:48:40.923443241 UTC, cookie_last_access_time = 2016-09-12 21:48:40.923443241 UTC, cookie_persistent = False, cookie_host_only = False, cookie_secure_only = True, cookie_http_only = True},Cookie {cookie_name = "fm", cookie_value = "0", cookie_expiry_time = 3016-01-14 00:00:00 UTC, cookie_domain = "twitter.com", cookie_path = "/", cookie_creation_time = 2016-09-12 21:48:40.923443241 UTC, cookie_last_access_time = 2016-09-12 21:48:40.923443241 UTC, cookie_persistent = False, cookie_host_only = False, cookie_secure_only = True, cookie_http_only = True}]}, responseClose' = ResponseClose}) (ParseError {errorContexts = [], errorMessage = "Failed reading: not a valid json value", errorPosition = 1:1})
+[12/Sep/2016:17:49:27 -0400] During processing of request from 127.0.0.1:38745
+request:
+"GET /rand HTTP/1.1\ncache-control: max-age=0\nupgrade-insecure-requests: 1\nconnection: keep-alive\naccept-encoding: gzip, deflate\naccept-language: en-US,en;q=0.5\naccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\nuser-agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:48.0) Gecko/20100101 Firefox/48.0\nhost: localhost:8000\n\nsn=\"localhost:8000\" c=127.0.0.1:38745 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+TlsExceptionHostPort (HandshakeFailed (Error_Packet_unexpected "Alert [(AlertLevel_Fatal,IllegalParameter)]" " expected: change cipher")) "twitter.com" 443
+[12/Sep/2016:17:49:46 -0400] During processing of request from 127.0.0.1:38745
+request:
+"GET /rand HTTP/1.1\ncache-control: max-age=0\nupgrade-insecure-requests: 1\nconnection: keep-alive\naccept-encoding: gzip, deflate\naccept-language: en-US,en;q=0.5\naccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\nuser-agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:48.0) Gecko/20100101 Firefox/48.0\nhost: localhost:8000\n\nsn=\"localhost:8000\" c=127.0.0.1:38745 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+TlsExceptionHostPort (HandshakeFailed (Error_Packet_unexpected "Alert [(AlertLevel_Fatal,IllegalParameter)]" " expected: change cipher")) "twitter.com" 443
+[12/Sep/2016:17:51:01 -0400] During processing of request from 127.0.0.1:38752
+request:
+"GET /rand HTTP/1.1\ncache-control: max-age=0\nupgrade-insecure-requests: 1\nconnection: keep-alive\naccept-encoding: gzip, deflate\naccept-language: en-US,en;q=0.5\naccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\nuser-agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:48.0) Gecko/20100101 Firefox/48.0\nhost: localhost:8000\n\nsn=\"localhost:8000\" c=127.0.0.1:38752 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+TlsExceptionHostPort (HandshakeFailed (Error_Packet_unexpected "Alert [(AlertLevel_Fatal,IllegalParameter)]" " expected: change cipher")) "twitter.com" 443
+[12/Sep/2016:17:53:06 -0400] During processing of request from 127.0.0.1:38816
+request:
+"GET /rand HTTP/1.1\ncache-control: max-age=0\nupgrade-insecure-requests: 1\nconnection: keep-alive\naccept-encoding: gzip, deflate\naccept-language: en-US,en;q=0.5\naccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\nuser-agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:48.0) Gecko/20100101 Firefox/48.0\nhost: localhost:8000\n\nsn=\"localhost:8000\" c=127.0.0.1:38816 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+TlsExceptionHostPort (HandshakeFailed (Error_Packet_unexpected "Alert [(AlertLevel_Fatal,IllegalParameter)]" " expected: change cipher")) "twitter.com" 443
+[12/Sep/2016:17:55:03 -0400] During processing of request from 127.0.0.1:38822
+request:
+"GET /rand HTTP/1.1\ncache-control: max-age=0\nupgrade-insecure-requests: 1\nconnection: keep-alive\naccept-encoding: gzip, deflate\naccept-language: en-US,en;q=0.5\naccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\nuser-agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:48.0) Gecko/20100101 Firefox/48.0\nhost: localhost:8000\n\nsn=\"localhost:8000\" c=127.0.0.1:38822 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+FailedConnectionException2 "stream.twitter.com" 443 True getAddrInfo: does not exist (Name or service not known)
+[12/Sep/2016:18:07:41 -0400] During processing of request from 127.0.0.1:38865
+request:
+"GET /rand HTTP/1.1\ncache-control: max-age=0\nupgrade-insecure-requests: 1\nconnection: keep-alive\naccept-encoding: gzip, deflate\naccept-language: en-US,en;q=0.5\naccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\nuser-agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:48.0) Gecko/20100101 Firefox/48.0\nhost: localhost:8000\n\nsn=\"localhost:8000\" c=127.0.0.1:38865 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+TlsExceptionHostPort (HandshakeFailed (Error_Packet_unexpected "Alert [(AlertLevel_Fatal,IllegalParameter)]" " expected: change cipher")) "twitter.com" 443
+[12/Sep/2016:18:08:46 -0400] During processing of request from 127.0.0.1:38868
+request:
+"GET /rand HTTP/1.1\ncache-control: max-age=0\nupgrade-insecure-requests: 1\nconnection: keep-alive\naccept-encoding: gzip, deflate\naccept-language: en-US,en;q=0.5\naccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\nuser-agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:48.0) Gecko/20100101 Firefox/48.0\nhost: localhost:8000\n\nsn=\"localhost:8000\" c=127.0.0.1:38868 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+JSONParseException Request {
+  host                 = "twitter.com"
+  port                 = 443
+  secure               = True
+  requestHeaders       = []
+  path                 = "/OMFGitsASHLYN/status/775456140830265345"
+  queryString          = ""
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = Just (-3425)
+  requestVersion       = HTTP/1.1
+}
+ (Response {responseStatus = Status {statusCode = 200, statusMessage = "OK"}, responseVersion = HTTP/1.1, responseHeaders = [("cache-control","no-cache, no-store, must-revalidate, pre-check=0, post-check=0"),("content-encoding","gzip"),("content-length","29024"),("content-type","text/html;charset=utf-8"),("date","Mon, 12 Sep 2016 22:08:46 GMT"),("expires","Tue, 31 Mar 1981 05:00:00 GMT"),("last-modified","Mon, 12 Sep 2016 22:08:46 GMT"),("pragma","no-cache"),("server","tsa_b"),("set-cookie","fm=0; Expires=Mon, 12 Sep 2016 22:08:36 UTC; Path=/; Domain=.twitter.com; Secure; HTTPOnly"),("set-cookie","_twitter_sess=BAh7CSIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%250ASGFzaHsABjoKQHVzZWR7ADoPY3JlYXRlZF9hdGwrCKUHciBXAToMY3NyZl9p%250AZCIlYTk4ZDgzZTYyZmE3NzliYzExYWVhNDllZDcxMTNiOWE6B2lkIiU0ZTYw%250ANDNiYzhhMWUyMGQ2YzJjOWY4MTRlZjgxNzc5Ng%253D%253D--2ba51bed974a8c6ff109254d7c05b0fc7be239cf; Path=/; Domain=.twitter.com; Secure; HTTPOnly"),("set-cookie","guest_id=v1%3A147371812649385253; Domain=.twitter.com; Path=/; Expires=Wed, 12-Sep-2018 22:08:46 UTC"),("status","200 OK"),("strict-transport-security","max-age=631138519"),("x-connection-hash","b177f469ef8396fa9123a1bfcf49c0d6"),("x-content-type-options","nosniff"),("x-frame-options","SAMEORIGIN"),("x-response-time","105"),("x-transaction","0093f544006c01b1"),("x-twitter-response-tags","BouncerCompliant"),("x-ua-compatible","IE=edge,chrome=1"),("x-xss-protection","1; mode=block")], responseBody = (), responseCookieJar = CJ {expose = [Cookie {cookie_name = "guest_id", cookie_value = "v1%3A147371812649385253", cookie_expiry_time = 3016-01-14 00:00:00 UTC, cookie_domain = "twitter.com", cookie_path = "/", cookie_creation_time = 2016-09-12 22:08:46.602919502 UTC, cookie_last_access_time = 2016-09-12 22:08:46.602919502 UTC, cookie_persistent = False, cookie_host_only = False, cookie_secure_only = False, cookie_http_only = False},Cookie {cookie_name = "_twitter_sess", cookie_value = "BAh7CSIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%250ASGFzaHsABjoKQHVzZWR7ADoPY3JlYXRlZF9hdGwrCKUHciBXAToMY3NyZl9p%250AZCIlYTk4ZDgzZTYyZmE3NzliYzExYWVhNDllZDcxMTNiOWE6B2lkIiU0ZTYw%250ANDNiYzhhMWUyMGQ2YzJjOWY4MTRlZjgxNzc5Ng%253D%253D--2ba51bed974a8c6ff109254d7c05b0fc7be239cf", cookie_expiry_time = 3016-01-14 00:00:00 UTC, cookie_domain = "twitter.com", cookie_path = "/", cookie_creation_time = 2016-09-12 22:08:46.602919502 UTC, cookie_last_access_time = 2016-09-12 22:08:46.602919502 UTC, cookie_persistent = False, cookie_host_only = False, cookie_secure_only = True, cookie_http_only = True},Cookie {cookie_name = "fm", cookie_value = "0", cookie_expiry_time = 3016-01-14 00:00:00 UTC, cookie_domain = "twitter.com", cookie_path = "/", cookie_creation_time = 2016-09-12 22:08:46.602919502 UTC, cookie_last_access_time = 2016-09-12 22:08:46.602919502 UTC, cookie_persistent = False, cookie_host_only = False, cookie_secure_only = True, cookie_http_only = True}]}, responseClose' = ResponseClose}) (ParseError {errorContexts = [], errorMessage = "Failed reading: not a valid json value", errorPosition = 1:1})
+[12/Sep/2016:18:09:03 -0400] During processing of request from 127.0.0.1:38868
+request:
+"GET /rand HTTP/1.1\ncache-control: max-age=0\nupgrade-insecure-requests: 1\nconnection: keep-alive\naccept-encoding: gzip, deflate\naccept-language: en-US,en;q=0.5\naccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\nuser-agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:48.0) Gecko/20100101 Firefox/48.0\nhost: localhost:8000\n\nsn=\"localhost:8000\" c=127.0.0.1:38868 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+TlsExceptionHostPort (HandshakeFailed (Error_Packet_unexpected "Alert [(AlertLevel_Fatal,IllegalParameter)]" " expected: change cipher")) "stream.twitter.com" 443
+[12/Sep/2016:18:09:09 -0400] During processing of request from 127.0.0.1:38868
+request:
+"GET /rand HTTP/1.1\ncache-control: max-age=0\nupgrade-insecure-requests: 1\nconnection: keep-alive\naccept-encoding: gzip, deflate\naccept-language: en-US,en;q=0.5\naccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\nuser-agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:48.0) Gecko/20100101 Firefox/48.0\nhost: localhost:8000\n\nsn=\"localhost:8000\" c=127.0.0.1:38868 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+TlsExceptionHostPort (HandshakeFailed (Error_Packet_unexpected "Alert [(AlertLevel_Fatal,IllegalParameter)]" " expected: change cipher")) "twitter.com" 443
+[12/Sep/2016:18:09:27 -0400] During processing of request from 127.0.0.1:38875
+request:
+"GET /rand HTTP/1.1\nupgrade-insecure-requests: 1\nconnection: keep-alive\naccept-encoding: gzip, deflate\naccept-language: en-US,en;q=0.5\naccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\nuser-agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:48.0) Gecko/20100101 Firefox/48.0\nhost: localhost:8000\n\nsn=\"localhost:8000\" c=127.0.0.1:38875 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+JSONParseException Request {
+  host                 = "twitter.com"
+  port                 = 443
+  secure               = True
+  requestHeaders       = []
+  path                 = "/Twentyongrier/status/775456311072985088"
+  queryString          = ""
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = Just (-3425)
+  requestVersion       = HTTP/1.1
+}
+ (Response {responseStatus = Status {statusCode = 200, statusMessage = "OK"}, responseVersion = HTTP/1.1, responseHeaders = [("cache-control","no-cache, no-store, must-revalidate, pre-check=0, post-check=0"),("content-encoding","gzip"),("content-length","28619"),("content-type","text/html;charset=utf-8"),("date","Mon, 12 Sep 2016 22:09:27 GMT"),("expires","Tue, 31 Mar 1981 05:00:00 GMT"),("last-modified","Mon, 12 Sep 2016 22:09:27 GMT"),("pragma","no-cache"),("server","tsa_b"),("set-cookie","fm=0; Expires=Mon, 12 Sep 2016 22:09:17 UTC; Path=/; Domain=.twitter.com; Secure; HTTPOnly"),("set-cookie","_twitter_sess=BAh7CSIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%250ASGFzaHsABjoKQHVzZWR7ADoPY3JlYXRlZF9hdGwrCO6lciBXAToMY3NyZl9p%250AZCIlYjhmNWNmMTBkODBmN2Q4MGVlY2ZlMzYwY2IxMGIwNzg6B2lkIiU3ZmRm%250AMGU0MzYyYjgxYTRmYzIzOWE0ZmFiM2YzZjdiYQ%253D%253D--0f681a6f60161f5527ec77e9ed46672a45f9ed9b; Path=/; Domain=.twitter.com; Secure; HTTPOnly"),("set-cookie","guest_id=v1%3A147371816702057271; Domain=.twitter.com; Path=/; Expires=Wed, 12-Sep-2018 22:09:27 UTC"),("status","200 OK"),("strict-transport-security","max-age=631138519"),("x-connection-hash","c3099a435cd0b978bd5a262414c5e190"),("x-content-type-options","nosniff"),("x-frame-options","SAMEORIGIN"),("x-response-time","215"),("x-transaction","00cba2eb00b7ff0a"),("x-twitter-response-tags","BouncerCompliant"),("x-ua-compatible","IE=edge,chrome=1"),("x-xss-protection","1; mode=block")], responseBody = (), responseCookieJar = CJ {expose = [Cookie {cookie_name = "guest_id", cookie_value = "v1%3A147371816702057271", cookie_expiry_time = 3016-01-14 00:00:00 UTC, cookie_domain = "twitter.com", cookie_path = "/", cookie_creation_time = 2016-09-12 22:09:27.239651659 UTC, cookie_last_access_time = 2016-09-12 22:09:27.239651659 UTC, cookie_persistent = False, cookie_host_only = False, cookie_secure_only = False, cookie_http_only = False},Cookie {cookie_name = "_twitter_sess", cookie_value = "BAh7CSIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%250ASGFzaHsABjoKQHVzZWR7ADoPY3JlYXRlZF9hdGwrCO6lciBXAToMY3NyZl9p%250AZCIlYjhmNWNmMTBkODBmN2Q4MGVlY2ZlMzYwY2IxMGIwNzg6B2lkIiU3ZmRm%250AMGU0MzYyYjgxYTRmYzIzOWE0ZmFiM2YzZjdiYQ%253D%253D--0f681a6f60161f5527ec77e9ed46672a45f9ed9b", cookie_expiry_time = 3016-01-14 00:00:00 UTC, cookie_domain = "twitter.com", cookie_path = "/", cookie_creation_time = 2016-09-12 22:09:27.239651659 UTC, cookie_last_access_time = 2016-09-12 22:09:27.239651659 UTC, cookie_persistent = False, cookie_host_only = False, cookie_secure_only = True, cookie_http_only = True},Cookie {cookie_name = "fm", cookie_value = "0", cookie_expiry_time = 3016-01-14 00:00:00 UTC, cookie_domain = "twitter.com", cookie_path = "/", cookie_creation_time = 2016-09-12 22:09:27.239651659 UTC, cookie_last_access_time = 2016-09-12 22:09:27.239651659 UTC, cookie_persistent = False, cookie_host_only = False, cookie_secure_only = True, cookie_http_only = True}]}, responseClose' = ResponseClose}) (ParseError {errorContexts = [], errorMessage = "Failed reading: not a valid json value", errorPosition = 1:1})
+[12/Sep/2016:18:15:24 -0400] During processing of request from 127.0.0.1:38891
+request:
+"GET /rand HTTP/1.1\ncache-control: max-age=0\nupgrade-insecure-requests: 1\nconnection: keep-alive\naccept-encoding: gzip, deflate\naccept-language: en-US,en;q=0.5\naccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\nuser-agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:48.0) Gecko/20100101 Firefox/48.0\nhost: localhost:8000\n\nsn=\"localhost:8000\" c=127.0.0.1:38891 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+FailedConnectionException2 "stream.twitter.com" 443 True getAddrInfo: does not exist (Name or service not known)
+[12/Sep/2016:18:16:31 -0400] During processing of request from 127.0.0.1:38898
+request:
+"GET /rand HTTP/1.1\ncache-control: max-age=0\nupgrade-insecure-requests: 1\nconnection: keep-alive\naccept-encoding: gzip, deflate\naccept-language: en-US,en;q=0.5\naccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\nuser-agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:48.0) Gecko/20100101 Firefox/48.0\nhost: localhost:8000\n\nsn=\"localhost:8000\" c=127.0.0.1:38898 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+JSONParseException Request {
+  host                 = "twitter.com"
+  port                 = 443
+  secure               = True
+  requestHeaders       = []
+  path                 = "/EpicFiveTV/status/775458089688367104"
+  queryString          = ""
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = Just (-3425)
+  requestVersion       = HTTP/1.1
+}
+ (Response {responseStatus = Status {statusCode = 200, statusMessage = "OK"}, responseVersion = HTTP/1.1, responseHeaders = [("cache-control","no-cache, no-store, must-revalidate, pre-check=0, post-check=0"),("content-encoding","gzip"),("content-length","28478"),("content-type","text/html;charset=utf-8"),("date","Mon, 12 Sep 2016 22:16:31 GMT"),("expires","Tue, 31 Mar 1981 05:00:00 GMT"),("last-modified","Mon, 12 Sep 2016 22:16:31 GMT"),("pragma","no-cache"),("server","tsa_b"),("set-cookie","fm=0; Expires=Mon, 12 Sep 2016 22:16:21 UTC; Path=/; Domain=.twitter.com; Secure; HTTPOnly"),("set-cookie","_twitter_sess=BAh7CSIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%250ASGFzaHsABjoKQHVzZWR7ADoPY3JlYXRlZF9hdGwrCOQeeSBXAToMY3NyZl9p%250AZCIlMWUxMDBiNTI2NDUxODI2YTEwODU5OTk4ZjE2YjNjYTg6B2lkIiUxZWRi%250ANTIwM2YxYzU3MGQ1ZjVkNDVkMWUwNmE1ODJhMQ%253D%253D--f726143e26ac72f97f4c360b58fe6a2e832da429; Path=/; Domain=.twitter.com; Secure; HTTPOnly"),("set-cookie","guest_id=v1%3A147371859113088446; Domain=.twitter.com; Path=/; Expires=Wed, 12-Sep-2018 22:16:31 UTC"),("status","200 OK"),("strict-transport-security","max-age=631138519"),("x-connection-hash","95efec136bc5fb2a04708094f647b3f7"),("x-content-type-options","nosniff"),("x-frame-options","SAMEORIGIN"),("x-response-time","237"),("x-transaction","007312830096db95"),("x-twitter-response-tags","BouncerCompliant"),("x-ua-compatible","IE=edge,chrome=1"),("x-xss-protection","1; mode=block")], responseBody = (), responseCookieJar = CJ {expose = [Cookie {cookie_name = "guest_id", cookie_value = "v1%3A147371859113088446", cookie_expiry_time = 3016-01-14 00:00:00 UTC, cookie_domain = "twitter.com", cookie_path = "/", cookie_creation_time = 2016-09-12 22:16:31.371278492 UTC, cookie_last_access_time = 2016-09-12 22:16:31.371278492 UTC, cookie_persistent = False, cookie_host_only = False, cookie_secure_only = False, cookie_http_only = False},Cookie {cookie_name = "_twitter_sess", cookie_value = "BAh7CSIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%250ASGFzaHsABjoKQHVzZWR7ADoPY3JlYXRlZF9hdGwrCOQeeSBXAToMY3NyZl9p%250AZCIlMWUxMDBiNTI2NDUxODI2YTEwODU5OTk4ZjE2YjNjYTg6B2lkIiUxZWRi%250ANTIwM2YxYzU3MGQ1ZjVkNDVkMWUwNmE1ODJhMQ%253D%253D--f726143e26ac72f97f4c360b58fe6a2e832da429", cookie_expiry_time = 3016-01-14 00:00:00 UTC, cookie_domain = "twitter.com", cookie_path = "/", cookie_creation_time = 2016-09-12 22:16:31.371278492 UTC, cookie_last_access_time = 2016-09-12 22:16:31.371278492 UTC, cookie_persistent = False, cookie_host_only = False, cookie_secure_only = True, cookie_http_only = True},Cookie {cookie_name = "fm", cookie_value = "0", cookie_expiry_time = 3016-01-14 00:00:00 UTC, cookie_domain = "twitter.com", cookie_path = "/", cookie_creation_time = 2016-09-12 22:16:31.371278492 UTC, cookie_last_access_time = 2016-09-12 22:16:31.371278492 UTC, cookie_persistent = False, cookie_host_only = False, cookie_secure_only = True, cookie_http_only = True}]}, responseClose' = ResponseClose}) (ParseError {errorContexts = [], errorMessage = "Failed reading: not a valid json value", errorPosition = 1:1})
+[12/Sep/2016:18:25:27 -0400] During processing of request from 127.0.0.1:38922
+request:
+"GET /rand HTTP/1.1\nupgrade-insecure-requests: 1\nconnection: keep-alive\naccept-encoding: gzip, deflate\naccept-language: en-US,en;q=0.5\naccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\nuser-agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:48.0) Gecko/20100101 Firefox/48.0\nhost: localhost:8000\n\nsn=\"localhost:8000\" c=127.0.0.1:38922 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+JSONParseException Request {
+  host                 = "twitter.com"
+  port                 = 443
+  secure               = True
+  requestHeaders       = []
+  path                 = "/NoHypeDolan/status/775460339328647168"
+  queryString          = ""
+  method               = "GET"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = Just (-3425)
+  requestVersion       = HTTP/1.1
+}
+ (Response {responseStatus = Status {statusCode = 200, statusMessage = "OK"}, responseVersion = HTTP/1.1, responseHeaders = [("cache-control","no-cache, no-store, must-revalidate, pre-check=0, post-check=0"),("content-encoding","gzip"),("content-length","28756"),("content-type","text/html;charset=utf-8"),("date","Mon, 12 Sep 2016 22:25:27 GMT"),("expires","Tue, 31 Mar 1981 05:00:00 GMT"),("last-modified","Mon, 12 Sep 2016 22:25:27 GMT"),("pragma","no-cache"),("server","tsa_b"),("set-cookie","fm=0; Expires=Mon, 12 Sep 2016 22:25:17 UTC; Path=/; Domain=.twitter.com; Secure; HTTPOnly"),("set-cookie","_twitter_sess=BAh7CSIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%250ASGFzaHsABjoKQHVzZWR7ADoPY3JlYXRlZF9hdGwrCJhNgSBXAToMY3NyZl9p%250AZCIlYjhiOWNiNGVjMDAzNmM5OTYzYzFhMWIwNjIyNGY3MWQ6B2lkIiUxMDQz%250AYjYxODg4MDM5YmQzZGMyZWMxYjRmZDg5YjE2Yg%253D%253D--04b65c7e20b8b49980f67a3d1f1cc6747da33891; Path=/; Domain=.twitter.com; Secure; HTTPOnly"),("set-cookie","guest_id=v1%3A147371912744676779; Domain=.twitter.com; Path=/; Expires=Wed, 12-Sep-2018 22:25:27 UTC"),("status","200 OK"),("strict-transport-security","max-age=631138519"),("x-connection-hash","36186d1909658606faccf39a4ddb99cf"),("x-content-type-options","nosniff"),("x-frame-options","SAMEORIGIN"),("x-response-time","75"),("x-transaction","009e6d5e0018fa8a"),("x-twitter-response-tags","BouncerCompliant"),("x-ua-compatible","IE=edge,chrome=1"),("x-xss-protection","1; mode=block")], responseBody = (), responseCookieJar = CJ {expose = [Cookie {cookie_name = "guest_id", cookie_value = "v1%3A147371912744676779", cookie_expiry_time = 3016-01-14 00:00:00 UTC, cookie_domain = "twitter.com", cookie_path = "/", cookie_creation_time = 2016-09-12 22:25:27.52476179 UTC, cookie_last_access_time = 2016-09-12 22:25:27.52476179 UTC, cookie_persistent = False, cookie_host_only = False, cookie_secure_only = False, cookie_http_only = False},Cookie {cookie_name = "_twitter_sess", cookie_value = "BAh7CSIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%250ASGFzaHsABjoKQHVzZWR7ADoPY3JlYXRlZF9hdGwrCJhNgSBXAToMY3NyZl9p%250AZCIlYjhiOWNiNGVjMDAzNmM5OTYzYzFhMWIwNjIyNGY3MWQ6B2lkIiUxMDQz%250AYjYxODg4MDM5YmQzZGMyZWMxYjRmZDg5YjE2Yg%253D%253D--04b65c7e20b8b49980f67a3d1f1cc6747da33891", cookie_expiry_time = 3016-01-14 00:00:00 UTC, cookie_domain = "twitter.com", cookie_path = "/", cookie_creation_time = 2016-09-12 22:25:27.52476179 UTC, cookie_last_access_time = 2016-09-12 22:25:27.52476179 UTC, cookie_persistent = False, cookie_host_only = False, cookie_secure_only = True, cookie_http_only = True},Cookie {cookie_name = "fm", cookie_value = "0", cookie_expiry_time = 3016-01-14 00:00:00 UTC, cookie_domain = "twitter.com", cookie_path = "/", cookie_creation_time = 2016-09-12 22:25:27.52476179 UTC, cookie_last_access_time = 2016-09-12 22:25:27.52476179 UTC, cookie_persistent = False, cookie_host_only = False, cookie_secure_only = True, cookie_http_only = True}]}, responseClose' = ResponseClose}) (ParseError {errorContexts = [], errorMessage = "Failed reading: not a valid json value", errorPosition = 1:1})
+[12/Sep/2016:18:36:29 -0400] During processing of request from 127.0.0.1:39007
+request:
+"GET /rand HTTP/1.1\ncache-control: max-age=0\nupgrade-insecure-requests: 1\nconnection: keep-alive\naccept-encoding: gzip, deflate\naccept-language: en-US,en;q=0.5\naccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\nuser-agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:48.0) Gecko/20100101 Firefox/48.0\nhost: localhost:8000\n\nsn=\"localhost:8000\" c=127.0.0.1:39007 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+FailedConnectionException2 "stream.twitter.com" 443 True getAddrInfo: does not exist (Name or service not known)
+[12/Sep/2016:20:43:26 -0400] During processing of request from 127.0.0.1:39551
+request:
+"OPTIONS /rand HTTP/1.1\nconnection: keep-alive\norigin: http://localhost:8000\naccess-control-request-headers: content-type\naccess-control-request-method: GET\naccept-encoding: gzip, deflate\naccept-language: en-US,en;q=0.5\naccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\nuser-agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:48.0) Gecko/20100101 Firefox/48.0\nhost: 0.0.0.0:8000\n\nsn=\"0.0.0.0:8000\" c=127.0.0.1:39551 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+StatusCodeException (Status {statusCode = 400, statusMessage = "Bad Request"}) [("connection","close"),("content-disposition","attachment; filename=json.json"),("content-encoding","gzip"),("content-length","68"),("content-type","application/json; charset=utf-8"),("date","Tue, 13 Sep 2016 00:43:26 GMT"),("server","tsa_b"),("set-cookie","guest_id=v1%3A147372740621527696; Domain=.twitter.com; Path=/; Expires=Thu, 13-Sep-2018 00:43:26 UTC"),("strict-transport-security","max-age=631138519"),("x-connection-hash","1a260f455ffe5b5ae459b064baf37e0b"),("x-content-type-options","nosniff"),("x-frame-options","SAMEORIGIN"),("x-response-time","3"),("x-xss-protection","1; mode=block"),("X-Response-Body-Start","{\"errors\":[\"url: queryParam is required\"]}"),("X-Request-URL","GET https://publish.twitter.com:443/oembed?url=twitter.com/dyelinne/status/775495061152731137&hide_media=true")] (CJ {expose = [Cookie {cookie_name = "guest_id", cookie_value = "v1%3A147372740621527696", cookie_expiry_time = 3016-01-15 00:00:00 UTC, cookie_domain = "twitter.com", cookie_path = "/", cookie_creation_time = 2016-09-13 00:43:26.223415619 UTC, cookie_last_access_time = 2016-09-13 00:43:26.223415619 UTC, cookie_persistent = False, cookie_host_only = False, cookie_secure_only = False, cookie_http_only = False}]})
+[12/Sep/2016:20:43:43 -0400] During processing of request from 127.0.0.1:39548
+request:
+"GET /rand HTTP/1.1\nupgrade-insecure-requests: 1\nconnection: keep-alive\naccept-encoding: gzip, deflate\naccept-language: en-US,en;q=0.5\naccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\nuser-agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:48.0) Gecko/20100101 Firefox/48.0\nhost: localhost:8000\n\nsn=\"localhost:8000\" c=127.0.0.1:39548 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+StatusCodeException (Status {statusCode = 400, statusMessage = "Bad Request"}) [("connection","close"),("content-disposition","attachment; filename=json.json"),("content-encoding","gzip"),("content-length","68"),("content-type","application/json; charset=utf-8"),("date","Tue, 13 Sep 2016 00:43:43 GMT"),("server","tsa_b"),("set-cookie","guest_id=v1%3A147372742364614335; Domain=.twitter.com; Path=/; Expires=Thu, 13-Sep-2018 00:43:43 UTC"),("strict-transport-security","max-age=631138519"),("x-connection-hash","65e2927d6a967cad3b1bf986742e42c3"),("x-content-type-options","nosniff"),("x-frame-options","SAMEORIGIN"),("x-response-time","4"),("x-xss-protection","1; mode=block"),("X-Response-Body-Start","{\"errors\":[\"url: queryParam is required\"]}"),("X-Request-URL","GET https://publish.twitter.com:443/oembed?url=twitter.com/gneffa/status/775495135224266753&hide_media=true")] (CJ {expose = [Cookie {cookie_name = "guest_id", cookie_value = "v1%3A147372742364614335", cookie_expiry_time = 3016-01-15 00:00:00 UTC, cookie_domain = "twitter.com", cookie_path = "/", cookie_creation_time = 2016-09-13 00:43:43.655951175 UTC, cookie_last_access_time = 2016-09-13 00:43:43.655951175 UTC, cookie_persistent = False, cookie_host_only = False, cookie_secure_only = False, cookie_http_only = False}]})
+[12/Sep/2016:20:43:59 -0400] During processing of request from 127.0.0.1:39548
+request:
+"GET /rand HTTP/1.1\ncache-control: max-age=0\nupgrade-insecure-requests: 1\nconnection: keep-alive\naccept-encoding: gzip, deflate\naccept-language: en-US,en;q=0.5\naccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\nuser-agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:48.0) Gecko/20100101 Firefox/48.0\nhost: localhost:8000\n\nsn=\"localhost:8000\" c=127.0.0.1:39548 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+StatusCodeException (Status {statusCode = 400, statusMessage = "Bad Request"}) [("connection","close"),("content-disposition","attachment; filename=json.json"),("content-encoding","gzip"),("content-length","68"),("content-type","application/json; charset=utf-8"),("date","Tue, 13 Sep 2016 00:43:59 GMT"),("server","tsa_b"),("set-cookie","guest_id=v1%3A147372743986028941; Domain=.twitter.com; Path=/; Expires=Thu, 13-Sep-2018 00:43:59 UTC"),("strict-transport-security","max-age=631138519"),("x-connection-hash","dcfac91ed1c04b271fc6a380656dc032"),("x-content-type-options","nosniff"),("x-frame-options","SAMEORIGIN"),("x-response-time","3"),("x-xss-protection","1; mode=block"),("X-Response-Body-Start","{\"errors\":[\"url: queryParam is required\"]}"),("X-Request-URL","GET https://publish.twitter.com:443/oembed?url=twitter.com/lidaTenya/status/775495201989111808&hide_media=true")] (CJ {expose = [Cookie {cookie_name = "guest_id", cookie_value = "v1%3A147372743986028941", cookie_expiry_time = 3016-01-15 00:00:00 UTC, cookie_domain = "twitter.com", cookie_path = "/", cookie_creation_time = 2016-09-13 00:43:59.869349458 UTC, cookie_last_access_time = 2016-09-13 00:43:59.869349458 UTC, cookie_persistent = False, cookie_host_only = False, cookie_secure_only = False, cookie_http_only = False}]})
+[12/Sep/2016:20:47:12 -0400] During processing of request from 127.0.0.1:39570
+request:
+"OPTIONS /rand HTTP/1.1\nconnection: keep-alive\norigin: http://localhost:8000\naccess-control-request-headers: content-type\naccess-control-request-method: GET\naccept-encoding: gzip, deflate\naccept-language: en-US,en;q=0.5\naccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\nuser-agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:48.0) Gecko/20100101 Firefox/48.0\nhost: 0.0.0.0:8000\n\nsn=\"0.0.0.0:8000\" c=127.0.0.1:39570 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+TlsExceptionHostPort (HandshakeFailed (Error_Packet_unexpected "Alert [(AlertLevel_Fatal,IllegalParameter)]" " expected: change cipher")) "publish.twitter.com" 443
+[12/Sep/2016:20:48:07 -0400] During processing of request from 127.0.0.1:39585
+request:
+"GET /rand HTTP/1.1\nconnection: keep-alive\nreferer: http://0.0.0.0:8000/\nx-requested-with: XMLHttpRequest\ncontent-type: application/json;charset=ISO-8859-15\naccept-encoding: gzip, deflate\naccept-language: en-US,en;q=0.5\naccept: */*\nuser-agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:48.0) Gecko/20100101 Firefox/48.0\nhost: 0.0.0.0:8000\n\nsn=\"0.0.0.0:8000\" c=127.0.0.1:39585 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+TlsExceptionHostPort (HandshakeFailed (Error_Packet_unexpected "Alert [(AlertLevel_Fatal,IllegalParameter)]" " expected: change cipher")) "publish.twitter.com" 443
+[12/Sep/2016:20:48:16 -0400] During processing of request from 127.0.0.1:39559
+request:
+"GET /rand HTTP/1.1\ncache-control: max-age=0\nupgrade-insecure-requests: 1\nconnection: keep-alive\naccept-encoding: gzip, deflate\naccept-language: en-US,en;q=0.5\naccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\nuser-agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:48.0) Gecko/20100101 Firefox/48.0\nhost: localhost:8000\n\nsn=\"localhost:8000\" c=127.0.0.1:39559 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+TlsExceptionHostPort (HandshakeFailed (Error_Packet_unexpected "Alert [(AlertLevel_Fatal,IllegalParameter)]" " expected: change cipher")) "publish.twitter.com" 443
+[12/Sep/2016:20:49:00 -0400] During processing of request from 127.0.0.1:39603
+request:
+"GET /rand HTTP/1.1\nconnection: keep-alive\nreferer: http://0.0.0.0:8000/\nx-requested-with: XMLHttpRequest\ncontent-type: application/json;charset=ISO-8859-15\naccept-encoding: gzip, deflate\naccept-language: en-US,en;q=0.5\naccept: */*\nuser-agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:48.0) Gecko/20100101 Firefox/48.0\nhost: 0.0.0.0:8000\n\nsn=\"0.0.0.0:8000\" c=127.0.0.1:39603 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+FailedConnectionException2 "publish.twitter.com" 443 True sendBuf: resource vanished (Broken pipe)
+[12/Sep/2016:20:49:00 -0400] During processing of request from 127.0.0.1:39605
+request:
+"GET /rand HTTP/1.1\nconnection: keep-alive\nreferer: http://0.0.0.0:8000/\nx-requested-with: XMLHttpRequest\ncontent-type: application/json;charset=ISO-8859-15\naccept-encoding: gzip, deflate\naccept-language: en-US,en;q=0.5\naccept: */*\nuser-agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:48.0) Gecko/20100101 Firefox/48.0\nhost: 0.0.0.0:8000\n\nsn=\"0.0.0.0:8000\" c=127.0.0.1:39605 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+TlsExceptionHostPort (HandshakeFailed (Error_Packet_unexpected "Alert [(AlertLevel_Fatal,IllegalParameter)]" " expected: change cipher")) "publish.twitter.com" 443
+[12/Sep/2016:20:49:26 -0400] During processing of request from 127.0.0.1:39559
+request:
+"GET /rand HTTP/1.1\nupgrade-insecure-requests: 1\nconnection: keep-alive\naccept-encoding: gzip, deflate\naccept-language: en-US,en;q=0.5\naccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\nuser-agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:48.0) Gecko/20100101 Firefox/48.0\nhost: localhost:8000\n\nsn=\"localhost:8000\" c=127.0.0.1:39559 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+FailedConnectionException2 "publish.twitter.com" 443 True sendBuf: resource vanished (Broken pipe)
+[16/Sep/2016:17:39:57 -0400] During processing of request from 127.0.0.1:41130
+request:
+"GET /bits HTTP/1.1\nupgrade-insecure-requests: 1\nconnection: keep-alive\naccept-encoding: gzip, deflate\naccept-language: en-US,en;q=0.5\naccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\nuser-agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:48.0) Gecko/20100101 Firefox/48.0\nhost: localhost:8000\n\nsn=\"localhost:8000\" c=127.0.0.1:41130 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+OAUTH_CONSUMER_KEY: getEnv: does not exist (no environment variable)
