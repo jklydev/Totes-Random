@@ -33,6 +33,9 @@ getOAuthTokens = do
   where
     getEnv' = (S8.pack <$>) . getEnv
 
+getPortNum:: IO String
+getPortNum = getEnv "PORT"
+
 getProxyEnv :: IO (Maybe Proxy)
 getProxyEnv = do
     env <- M.fromList . over (mapped . _1) CI.mk <$> getEnvironment
