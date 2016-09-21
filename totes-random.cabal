@@ -66,3 +66,5 @@ executable totes-random
                      , mtl                       >= 2     && < 3
                      , snap-core                 >= 1.0   && < 1.1
                      , snap-server               >= 1.0   && < 1.1
+                     , heist
+                     , xmlhtml
