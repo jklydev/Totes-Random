@@ -1,6 +1,7 @@
+keys.sh
 Creds.hs
 Info.hs
 .stack-work
 .ghci
 unused
-log/*        
+log/*
