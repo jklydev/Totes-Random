@@ -7,13 +7,11 @@ import Snap.Util.FileServe
 import Snap.Http.Server
 import RandomHandler
 import GetInfo (getPortNum)
-import qualified Data.ByteString.Char8 as B
+import qualified Data.ByteString.Lazy as B
 import Control.Monad.IO.Class (liftIO)
 import System.IO (FilePath,readFile)
-import            Heist
-import            Heist.Interpreted
 import qualified  Data.Text as T
-import qualified  Text.XmlHtml as X
+
 
 main :: IO ()
 main = quickHttpServe site
@@ -21,7 +19,7 @@ main = quickHttpServe site
 site :: Snap ()
 site =
     ifTop topHandler <|>
-    route [("rand", echoHandler),
+    route [("rand", randHandler),
            ("float",floatHandler),
            ("bits",bitsHandler),
            ("int",intHandler)
@@ -30,41 +28,32 @@ site =
 
 topHandler :: Snap ()
 topHandler = do
-  page <- liftIO $ readFile "./index.html"
-  let maybePage = Just (B.pack page)
-  maybe (writeBS "didn't work") writeBS maybePage
+  page <- liftIO $ B.readFile "./index.html"
+  let maybePage = Just page
+  maybe (writeLBS "didn't work") writeLBS maybePage
 
 bitsHandler :: Snap ()
 bitsHandler = do
   val <- liftIO $ randVal' "bits"
-  let rVal = Just (B.pack val)
-  maybe(writeBS "failed to generate random bits") writeBS rVal
+  let rVal = Just val
+  maybe(writeLBS "failed to generate random bits") writeLBS rVal
 
 intHandler :: Snap ()
 intHandler =  do
   val <- liftIO $ randVal' "integer"
-  let rVal = Just (B.pack val)
-  maybe(writeBS "failed to generate a random interger") writeBS rVal
+  let rVal = Just val
+  maybe(writeLBS "failed to generate a random interger") writeLBS rVal
 
 floatHandler :: Snap ()
 floatHandler =  do
   val <- liftIO $ randVal' "float"
-  let rVal = Just (B.pack val)
-  maybe(writeBS "failed to generate random bits") writeBS rVal
+  let rVal = Just val
+  maybe(writeLBS "failed to generate random bits") writeLBS rVal
 
-echoHandler :: Snap ()
-echoHandler = do
+randHandler :: Snap ()
+randHandler = do
     val <- liftIO $ randVal
-    let rVal = Just (B.pack val)
+    let rVal = Just val
     -- param <- getParam "echoparam"
-    maybe (writeBS "failed to generate a random number")
-          writeBS rVal
-
-portSplice :: Splice Snap
-portSplice = do
-    port <- liftIO getPortNum
-    let newURL = "http://0.0.0.0:"++port++"/rand"
-    -- input <- getParamNode
-    -- let text = T.unpack $ X.nodeText input
-        -- n = read text :: Int
-    return [X.TextNode $ T.pack $ newURL]
+    maybe (writeLBS "failed to generate a random number")
+          writeLBS rVal
