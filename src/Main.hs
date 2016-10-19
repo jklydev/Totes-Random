@@ -6,11 +6,10 @@ import Snap.Core
 import Snap.Util.FileServe
 import Snap.Http.Server
 import RandomHandler
-import GetInfo (getPortNum)
+-- import GetInfo (getPortNum)
 import qualified Data.ByteString.Lazy as B
 import Control.Monad.IO.Class (liftIO)
 import System.IO (FilePath,readFile)
-import qualified  Data.Text as T
 
 
 main :: IO ()

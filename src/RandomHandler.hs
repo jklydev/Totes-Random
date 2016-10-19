@@ -13,7 +13,7 @@ import System.Random (random,randomR,randomRs,mkStdGen)
 import System.Random.Mersenne.Pure64 (pureMT,randomInt)
 import Data.Aeson (ToJSON(toJSON),FromJSON(..),Value(Object),(.:),encode,decode)
 import Network.HTTP.Conduit
-import qualified Data.Text.Lazy as T
+import qualified Data.Text.Lazy as T (pack)
 import Data.Text.Lazy.Encoding (encodeUtf8)
 import qualified Data.ByteString.Lazy as B
 
