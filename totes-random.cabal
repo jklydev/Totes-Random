@@ -67,3 +67,4 @@ executable totes-random
                      , snap-core                 >= 1.0   && < 1.1
                      , snap-server               >= 1.0   && < 1.1
                      , scotty
+                     , wai-cors
