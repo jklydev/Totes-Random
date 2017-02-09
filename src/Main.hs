@@ -2,9 +2,7 @@
 module Main where
 
 import Control.Applicative
-import Snap.Core
-import Snap.Util.FileServe
-import Snap.Http.Server
+import Web.Scotty
 import RandomHandler
 -- import GetInfo (getPortNum)
 import qualified Data.ByteString.Lazy as B
@@ -12,47 +10,44 @@ import Control.Monad.IO.Class (liftIO)
 import System.IO (FilePath,readFile)
 
 
-main :: IO ()
-main = quickHttpServe site
+-- define static directory at some point
+-- main2 :: IO ()
+main = scotty 8888 $ do
+    get "/rand" $ do
+        val <- randHandler
+        html $ val
+    get "/float" $ do
+        val <- floatHandler
+        html $ val
+    get "/bits" $ do
+        val <- bitsHandler
+        html $ val
+    get "/int" $ do
+        val <- intHandler
+        html $ val
 
-site :: Snap ()
-site =
-    ifTop topHandler <|>
-    route [("rand", randHandler),
-           ("float",floatHandler),
-           ("bits",bitsHandler),
-           ("int",intHandler)
-          ] <|>
-    dir "static" (serveDirectory ".")
+-- topHandler :: Snap ()
+--topHandler = do
+--  page <- liftIO $ B.readFile "./index.html"
+--  let maybePage = Just page
+--  maybe (writeLBS "didn't work") writeLBS maybePage
 
-topHandler :: Snap ()
-topHandler = do
-  page <- liftIO $ B.readFile "./index.html"
-  let maybePage = Just page
-  maybe (writeLBS "didn't work") writeLBS maybePage
-
-bitsHandler :: Snap ()
+--bitsHandler :: Snap ()
 bitsHandler = do
   val <- liftIO $ randVal' "bits"
-  let rVal = Just val
-  maybe(writeLBS "failed to generate random bits") writeLBS rVal
+  return val
 
-intHandler :: Snap ()
+-- intHandler :: Snap ()
 intHandler =  do
   val <- liftIO $ randVal' "integer"
-  let rVal = Just val
-  maybe(writeLBS "failed to generate a random interger") writeLBS rVal
+  return val
 
-floatHandler :: Snap ()
+-- floatHandler :: Snap ()
 floatHandler =  do
   val <- liftIO $ randVal' "float"
-  let rVal = Just val
-  maybe(writeLBS "failed to generate random bits") writeLBS rVal
+  return val
 
-randHandler :: Snap ()
+-- randHandler :: Snap ()
 randHandler = do
     val <- liftIO $ randVal
-    let rVal = Just val
-    -- param <- getParam "echoparam"
-    maybe (writeLBS "failed to generate a random number")
-          writeLBS rVal
+    return val
