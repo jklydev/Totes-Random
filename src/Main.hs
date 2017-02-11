@@ -15,6 +15,8 @@ import Network.Wai.Middleware.Cors
 -- main2 :: IO ()
 main = scotty 8888 $ do
     middleware simpleCors
+    get "/" $ do
+        file $ "index.html"
     get "/rand" $ do
         val <- randHandler
         html $ val
