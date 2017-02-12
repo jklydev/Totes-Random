@@ -14,30 +14,30 @@ import System.Random.Mersenne.Pure64 (pureMT,randomInt)
 import Data.Aeson (ToJSON(toJSON),FromJSON(..),Value(Object),(.:),encode,decode)
 import Network.HTTP.Conduit
 import qualified Data.Text.Lazy as T
-import Data.Text.Lazy.Encoding (encodeUtf8)
+import Data.Text.Lazy.Encoding (encodeUtf8,decodeUtf8)
 import qualified Data.ByteString.Lazy as B
 
 
-data TweetEmbed = TweetEmbed {html :: String } deriving (Show)
+-- data TweetEmbed = TweetEmbed {html :: String } deriving (Show)
 
-instance FromJSON TweetEmbed where
-  parseJSON (Object v) = TweetEmbed <$> v .: "html"
+-- instance FromJSON TweetEmbed where
+  -- parseJSON (Object v) = TweetEmbed <$> v .: "html"
 
 
-getTweet :: String -> IO (Maybe TweetEmbed)
-getTweet url = simpleHttp ("https://publish.twitter.com/oembed?url="++ url++"&hide_media=true") >>= return . decode
+getTweet :: String -> String
+getTweet url = "https://publish.twitter.com/oembed?url="++ url++"&hide_media=true"
 
 -- Random float + html for embedding source tweets
 randVal :: IO T.Text
 randVal = do
   (TwitterSeed twint tweets) <- twit
   -- manager <- newManager tlsManagerSettings
-  requests <- sequence $ map getTweet tweets
-  let requests' = map html $ maybe [] id $ sequence requests
+  let requests = map getTweet tweets
+  -- let requests' = map html $ maybe [] id $ sequence requests
   let mersenne = pureMT $ fromIntegral twint
       randoCalinteger = fst $ randomInt mersenne
       randOfTheKing = fst $ randomR (0,1) (mkStdGen randoCalinteger) :: Double
-  return $ encode' $ toJSON (TwitterSeed randOfTheKing requests')
+  return $ decodeUtf8 $ encode $ toJSON (TwitterSeed randOfTheKing requests)
 
 encode' :: Show a => a -> T.Text
 encode' = T.pack . show
