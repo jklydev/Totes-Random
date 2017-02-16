@@ -93,7 +93,7 @@
         }
 
         function getNumberAndTweets() {
-          const url = '???';
+          const url = 'http://www.totes-random.website/rand';
           const xhr = new XMLHttpRequest();
           xhr.onreadystatechange = function() {
             if (xhr.readystate === 4) {
@@ -103,9 +103,9 @@
                 console.log(xhr.statusText);
               }
             }
-            xhr.open('GET', url, true);
-            xhr.send();
           }
+          xhr.open('GET', url, true);
+          xhr.send();
         }
         document.getElementById('generate').addEventListener('click', getNumberAndTweets);
       });
