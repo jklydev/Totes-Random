@@ -1,51 +1,114 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html>
   <head>
-    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
-    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+    <style>
+      blockquote.twitter-tweet {
+        display: inline-block;
+        padding: 16px;
+        margin: 10px 0;
+        max-width: 468px;
+        border: #ddd 1px solid;
+        border-top-color: #eee;
+        border-bottom-color: #bbb;
+        border-radius: 5px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+        font: bold 14px/18px Helvetica, Arial, sans-serif;
+        color: #000;
+        background-color: white;
+      }
 
-    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
-    <link rel='stylesheet' type='text/css' href='tweet_style.css'>
+      blockquote.twitter-tweet p {
+        font: normal 18px/24px Georgia, "Times New Roman", Palatino, serif;
+        margin: 0 5px 10px 0;
+      }
+
+      blockquote.twitter-tweet a[href^="https://twitter.com"] {
+        font-weight: normal;
+        color: #666;
+        font-size: 12px;
+      }
+
+      body {
+        padding: 20px;
+        text-align: center;
+        font-family: Futura, sans-serif;
+        background-color: #eaeaea;
+      }
+      h1, h2, h3, h4, h5 {
+        font-weight: 300;
+      }
+      hr {
+        background: white;
+        height: 2px;
+        border: none;
+
+      }
+      button {
+        border: none;
+        background: rgb(10, 96, 115);
+        color: white;
+        border-radius: 2px;
+        padding: 15px;
+        font-size: 13px;
+      }
+    </style>
   </head>
   <body>
-    <script type='text/javascript'>
-      function addTweets(tweets) {
-        $('#number').append('<h4>here\'s the tweets it came from.</h4>');
-        $('#tweets').empty();
-        tweets.forEach((tweet) => { $('#tweets').append(tweet); });
-      }
-      function getNumberAndTweets() {
-        console.log("found this function");
-        $.ajax({
-          url: <randURL>'blah!'</randURL>,
-          method: 'GET',
-          contentType: 'application/json;charset=ISO-8859-15',
-          success: (resp) => {
-            $('#number').empty();
-            const data = JSON.parse(JSON.parse(resp));
-            $('#number').append('<h4>here\'s a random number. it\'s from twitter.<h4><h5>(1000% cryptographically valid.)</h5><h2>' + data.value + '</h2>');
-            addTweets(data['tweet ids']);
-          },
-          error: (obj, textStatus, errorThrown) => {
-            console.log(textStatus, errorThrown);
-          }
-        });
-      }
-      function generate() {
-        getNumberAndTweets();
-      }
-    </script>
-
     <h1>totes random.</h1>
     <br>
-    <button type='button' class='btn btn-primary' onclick='generate()'>
-      <h5>do probability</h5>
-    </button>
+    <button id='generate'>do probability</button>
     <hr>
-    <div id='number'>
-    </div>
-    <div id='tweets'>
-    </div>
+    <script type='text/javascript'>
+      document.addEventListener('DOMContentLoaded',() => {
+        let firstNumber = true;
+        function addTweets(div, tweets) {
+          const tweetDiv = document.createElement('div');
+          const header = document.createElement('h4');
+          header.appendChild(document.createTextNode('here\'s the tweets it came from.'));
+          div.appendChild(header);
+          tweets.forEach((tweet) => {
+            tweetDiv.appendChild(tweets);
+          });
+          div.appendChild(tweetDiv);
+        }
+
+        function generateSuccess(data) {
+          if (!firstNumber) {
+            document.body.removeChild(document.body.lastChild);
+          }
+          const fragment = new DocumentFragment();
+          const div = document.createElement('div');
+          const h2 = document.createElement('h2');
+          const h4 = document.createElement('h4');
+          const h5 = document.createElement('h5');
+          h4.appendChild(document.createTextNode('here\'s a random number. it\'s from twitter.'));
+          h5.appendChild(document.createTextNode('(1000% cryptographically valid.)'));
+          h2.appendChild(document.createTextNode(data.value));
+          div.appendChild(h4);
+          div.appendChild(h5);
+          div.appendChild(h2);
+          addTweets(div, data['tweet ids']);
+          fragment.appendChild(div);
+          document.body.appendChild(fragment);
+        }
+
+        function getNumberAndTweets() {
+          const url = '???';
+          const xhr = new XMLHttpRequest();
+          xhr.onreadystatechange = function() {
+            if (xhr.readystate === 4) {
+              if (xhr.status === 200) {
+                generateSucces(JSON.parse(JSON.parse(xhr.responseText)))
+              } else {
+                console.log(xhr.statusText);
+              }
+            }
+            xhr.open('GET', url, true);
+            xhr.send();
+          }
+        }
+        document.getElementById('generate').addEventListener('click', getNumberAndTweets);
+      });
+    </script>
   </body>
 </html>

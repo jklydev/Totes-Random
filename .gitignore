@@ -5,3 +5,4 @@ Info.hs
 .ghci
 unused
 log/*
+*.swp
