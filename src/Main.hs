@@ -4,7 +4,7 @@ module Main where
 import Control.Applicative
 import Web.Scotty
 import RandomHandler
--- import GetInfo (getPortNum)
+import GetInfo (getPortNum)
 import qualified Data.ByteString.Lazy as B
 import Control.Monad.IO.Class (liftIO)
 import System.IO (FilePath,readFile)
@@ -13,7 +13,10 @@ import Network.Wai.Middleware.Cors
 
 -- define static directory at some point
 -- main2 :: IO ()
-main = scotty 8888 $ do
+main = do
+  portString <- getPortNum
+  let portNum = read(portString)::Int
+  scotty 8888 $ do
     middleware simpleCors
     get "/" $ do
         file $ "index.html"
