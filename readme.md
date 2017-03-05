@@ -32,7 +32,7 @@ Gives you a 32-bit float between 0 and 1 in plain text.
 
 ### Get an Int
 http://www.totes-random.website/int
-Gives you a 32-bit signed integer 
+Gives you a 32-bit integer.
 
 ### Get bits
 http://www.totes-random.website/bits
