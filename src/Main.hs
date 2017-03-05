@@ -16,7 +16,7 @@ import Network.Wai.Middleware.Cors
 main = do
   portString <- getPortNum
   let portNum = read(portString)::Int
-  scotty 8888 $ do
+  scotty portNum $ do
     middleware simpleCors
     get "/" $ do
         file $ "index.html"
