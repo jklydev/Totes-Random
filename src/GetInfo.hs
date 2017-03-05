@@ -33,8 +33,10 @@ getOAuthTokens = do
   where
     getEnv' = (S8.pack <$>) . getEnv
 
-getPortNum:: IO String
-getPortNum = getEnv "PORT"
+getPortNum:: Int -> IO Int
+getPortNum defPort = do
+  mPort <- lookupEnv "PORT"
+  return $ maybe defPort read mPort
 
 getProxyEnv :: IO (Maybe Proxy)
 getProxyEnv = do

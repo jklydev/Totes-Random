@@ -14,9 +14,9 @@ import Network.Wai.Middleware.Cors
 -- define static directory at some point
 -- main2 :: IO ()
 main = do
-  portString <- getPortNum
-  let portNum = read(portString)::Int
-  scotty 8888 $ do
+  portNum <- getPortNum 8888
+  -- let portNum = read(portString)::Int
+  scotty portNum $ do
     middleware simpleCors
     get "/" $ do
         file $ "index.html"
