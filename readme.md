@@ -4,7 +4,7 @@ Totes Random
 
 A 1000% secure random number generator using Twitter as a source of entropy.
 
-<img src="http://www.jkiely.co.uk/images/totes_random.png">
+<img src="http://www.jkly.io/images/totes_random.png">
 
 Introduction
 ------------
