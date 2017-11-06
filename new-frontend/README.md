@@ -1,5 +1,13 @@
 # totes-random
 
+
+## Environment
+
+You'll need node.js 8 installed to develop & build this application.
+
+Run `npm i` to install dependencies.
+
+
 ## Developing
 
 Add new TypeScript modules to `src/ts`.
