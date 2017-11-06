@@ -6,3 +6,6 @@ Info.hs
 unused
 log/*
 *.swp
+
+node_modules
+dist/

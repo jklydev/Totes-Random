@@ -1,0 +1,5 @@
+development:
+  SOME_KEY: 'foo'
+
+production:
+  SOME_KEY: 'bar'
